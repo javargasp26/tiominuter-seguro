@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Files shared through the FileProvider: only the camera capture of a training photo. -->
+<paths>
+    <cache-path
+        name="training_photo_capture"
+        path="training_photo_capture/" />
+</paths>

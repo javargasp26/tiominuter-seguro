@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Backup and device-transfer rules for Android 12 and higher.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+-->
+<data-extraction-rules>
+    <!-- Training photos stay on this device, and the downloaded content (content/) is a cache of
+         Firebase Hosting: both excluded from cloud backup and device transfer -->
+    <cloud-backup>
+        <exclude
+            domain="file"
+            path="training_photos/" />
+        <exclude
+            domain="file"
+            path="content/" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude
+            domain="file"
+            path="training_photos/" />
+        <exclude
+            domain="file"
+            path="content/" />
+    </device-transfer>
+</data-extraction-rules>

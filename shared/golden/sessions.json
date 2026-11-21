@@ -1,0 +1,3858 @@
+{
+ "baseWall": 1761048000000,
+ "caseCount": 32,
+ "cases": [
+  {
+   "id": "daily: a timed exercise, then a REPS one shown, hidden and shown again",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "on": true,
+      "type": "onScreen"
+     },
+     {
+      "ms": 30000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "visible"
+     },
+     {
+      "ms": 20000,
+      "type": "advance"
+     },
+     {
+      "on": true,
+      "type": "visible"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "onScreen"
+     },
+     {
+      "type": "action"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [
+      100
+     ],
+     "recorded": [],
+     "saves": 29
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 60,
+      "stored": {
+       "activeSeconds": 60,
+       "key": "daily:3",
+       "lastActivityAt": 1761048060000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 60,
+      "stored": {
+       "activeSeconds": 60,
+       "key": "daily:3",
+       "lastActivityAt": 1761048060000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "onScreen",
+      "meterSeconds": 60,
+      "stored": {
+       "activeSeconds": 60,
+       "key": "daily:3",
+       "lastActivityAt": 1761048060000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 90,
+      "stored": {
+       "activeSeconds": 90,
+       "key": "daily:3",
+       "lastActivityAt": 1761048090000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "visible",
+      "meterSeconds": 90,
+      "stored": {
+       "activeSeconds": 90,
+       "key": "daily:3",
+       "lastActivityAt": 1761048090000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 90,
+      "stored": {
+       "activeSeconds": 90,
+       "key": "daily:3",
+       "lastActivityAt": 1761048090000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "visible",
+      "meterSeconds": 90,
+      "stored": {
+       "activeSeconds": 90,
+       "key": "daily:3",
+       "lastActivityAt": 1761048110000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 100,
+      "stored": {
+       "activeSeconds": 100,
+       "key": "daily:3",
+       "lastActivityAt": 1761048120000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "onScreen",
+      "meterSeconds": 100,
+      "stored": {
+       "activeSeconds": 100,
+       "key": "daily:3",
+       "lastActivityAt": 1761048120000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "action",
+      "meterSeconds": 100,
+      "stored": {
+       "activeSeconds": 100,
+       "key": "daily:3",
+       "lastActivityAt": 1761048120000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 100,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "a running timer counts in the background",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "on": false,
+      "type": "visible"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "on": true,
+      "type": "visible"
+     },
+     {
+      "ms": 5000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [
+      65
+     ],
+     "recorded": [],
+     "saves": 19
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "visible",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 60,
+      "stored": {
+       "activeSeconds": 60,
+       "key": "daily:3",
+       "lastActivityAt": 1761048060000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "visible",
+      "meterSeconds": 60,
+      "stored": {
+       "activeSeconds": 60,
+       "key": "daily:3",
+       "lastActivityAt": 1761048060000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 65,
+      "stored": {
+       "activeSeconds": 65,
+       "key": "daily:3",
+       "lastActivityAt": 1761048065000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 65,
+      "stored": {
+       "activeSeconds": 65,
+       "key": "daily:3",
+       "lastActivityAt": 1761048065000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 65,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "an untimed step doesn't count in the background",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "onScreen"
+     },
+     {
+      "on": false,
+      "type": "visible"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "on": true,
+      "type": "visible"
+     },
+     {
+      "ms": 12500,
+      "type": "advance"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [
+      12
+     ],
+     "recorded": [],
+     "saves": 7
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "onScreen",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "visible",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "visible",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048060000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 12,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048070000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 12,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "an explicit pause is not counted",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "ms": 30000,
+      "type": "advance"
+     },
+     {
+      "type": "action"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [
+      20
+     ],
+     "recorded": [],
+     "saves": 10
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "action",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048040000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048040000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 20,
+      "stored": {
+       "activeSeconds": 20,
+       "key": "daily:3",
+       "lastActivityAt": 1761048050000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 20,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nothing counts before the first action; opening and leaving records nothing",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 15000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "ms": 1000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [],
+     "recorded": [],
+     "saves": 0
+    },
+    "steps": [
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": null
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 15,
+      "stored": null
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 15,
+      "stored": null
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 15,
+      "stored": null
+     },
+     {
+      "event": "closeInactive",
+      "meterSeconds": 15,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "counting before start is kept by the first save",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 7000,
+      "type": "advance"
+     },
+     {
+      "type": "start"
+     },
+     {
+      "ms": 6000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [
+      13
+     ],
+     "recorded": [],
+     "saves": 4
+    },
+    "steps": [
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": null
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 7,
+      "stored": null
+     },
+     {
+      "event": "start",
+      "meterSeconds": 7,
+      "stored": {
+       "activeSeconds": 7,
+       "key": "daily:3",
+       "lastActivityAt": 1761048007000,
+       "startedAt": 1761048007000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 13,
+      "stored": {
+       "activeSeconds": 12,
+       "key": "daily:3",
+       "lastActivityAt": 1761048012000,
+       "startedAt": 1761048007000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 13,
+      "stored": {
+       "activeSeconds": 13,
+       "key": "daily:3",
+       "lastActivityAt": 1761048013000,
+       "startedAt": 1761048007000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 13,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "process death mid-workout, reopened within 2 h: the old session is recorded with the last saved time",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 42500,
+      "type": "advance"
+     },
+     {
+      "type": "processDeath"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 20000,
+      "type": "advance"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [
+      40
+     ],
+     "finishedSeconds": [
+      20
+     ],
+     "recorded": [
+      {
+       "activeSeconds": 40,
+       "key": "daily:3",
+       "lastActivityAt": 1761048040000,
+       "startedAt": 1761048000000
+      }
+     ],
+     "saves": 18
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 42,
+      "stored": {
+       "activeSeconds": 40,
+       "key": "daily:3",
+       "lastActivityAt": 1761048040000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "processDeath",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 40,
+       "key": "daily:3",
+       "lastActivityAt": 1761048040000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 40,
+       "key": "daily:3",
+       "lastActivityAt": 1761048040000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048102500,
+       "startedAt": 1761048102500
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048102500,
+       "startedAt": 1761048102500
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 20,
+      "stored": {
+       "activeSeconds": 20,
+       "key": "daily:3",
+       "lastActivityAt": 1761048122500,
+       "startedAt": 1761048102500
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 20,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "process death, then the app starts exactly 2 h later: still open",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 30000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "type": "processDeath"
+     },
+     {
+      "ms": 7200000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [],
+     "recorded": [],
+     "saves": 10
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 30,
+      "stored": {
+       "activeSeconds": 30,
+       "key": "daily:3",
+       "lastActivityAt": 1761048030000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 30,
+      "stored": {
+       "activeSeconds": 30,
+       "key": "daily:3",
+       "lastActivityAt": 1761048030000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "processDeath",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 30,
+       "key": "daily:3",
+       "lastActivityAt": 1761048030000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 30,
+       "key": "daily:3",
+       "lastActivityAt": 1761048030000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "closeInactive",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 30,
+       "key": "daily:3",
+       "lastActivityAt": 1761048030000,
+       "startedAt": 1761048000000
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "process death, then the app starts 2 h + 1 ms later: recorded",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 30000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "type": "processDeath"
+     },
+     {
+      "ms": 7200001,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [],
+     "recorded": [
+      {
+       "activeSeconds": 30,
+       "key": "daily:3",
+       "lastActivityAt": 1761048030000,
+       "startedAt": 1761048000000
+      }
+     ],
+     "saves": 10
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 30,
+      "stored": {
+       "activeSeconds": 30,
+       "key": "daily:3",
+       "lastActivityAt": 1761048030000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 30,
+      "stored": {
+       "activeSeconds": 30,
+       "key": "daily:3",
+       "lastActivityAt": 1761048030000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "processDeath",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 30,
+       "key": "daily:3",
+       "lastActivityAt": 1761048030000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 30,
+       "key": "daily:3",
+       "lastActivityAt": 1761048030000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "closeInactive",
+      "meterSeconds": 0,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "back after more than 2 h on the same screen: the old session is recorded and the count restarts",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "ms": 7201000,
+      "type": "advance"
+     },
+     {
+      "type": "action"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 20000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [
+      20
+     ],
+     "recorded": [
+      {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     ],
+     "saves": 13
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "action",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761055211000,
+       "startedAt": 1761055211000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761055211000,
+       "startedAt": 1761055211000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 20,
+      "stored": {
+       "activeSeconds": 20,
+       "key": "daily:3",
+       "lastActivityAt": 1761055231000,
+       "startedAt": 1761055211000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 20,
+      "stored": {
+       "activeSeconds": 20,
+       "key": "daily:3",
+       "lastActivityAt": 1761055231000,
+       "startedAt": 1761055211000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 20,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "back after exactly 2 h: the same session goes on",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "ms": 7200000,
+      "type": "advance"
+     },
+     {
+      "type": "action"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 5000,
+      "type": "advance"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [
+      15
+     ],
+     "recorded": [],
+     "saves": 9
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "action",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761055210000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761055210000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 15,
+      "stored": {
+       "activeSeconds": 15,
+       "key": "daily:3",
+       "lastActivityAt": 1761055215000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 15,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "the clock moved back: never inactive",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "ms": -3600000,
+      "type": "clock"
+     },
+     {
+      "ms": 10800000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     },
+     {
+      "type": "action"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [
+      10
+     ],
+     "recorded": [],
+     "saves": 7
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "clock",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "closeInactive",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "action",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761055210000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 10,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "the clock moved forward over 2 h: closed lazily",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "ms": 10800000,
+      "type": "clock"
+     },
+     {
+      "type": "closeInactive"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [],
+     "recorded": [
+      {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     ],
+     "saves": 6
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "clock",
+      "meterSeconds": 10,
+      "stored": {
+       "activeSeconds": 10,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "closeInactive",
+      "meterSeconds": 10,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "a second start and a second finish do nothing",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 8000,
+      "type": "advance"
+     },
+     {
+      "type": "start"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "type": "finish"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [
+      8,
+      8
+     ],
+     "recorded": [],
+     "saves": 5
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 8,
+      "stored": {
+       "activeSeconds": 5,
+       "key": "daily:3",
+       "lastActivityAt": 1761048005000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "start",
+      "meterSeconds": 8,
+      "stored": {
+       "activeSeconds": 5,
+       "key": "daily:3",
+       "lastActivityAt": 1761048005000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 8,
+      "stored": {
+       "activeSeconds": 8,
+       "key": "daily:3",
+       "lastActivityAt": 1761048008000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 8,
+      "stored": null
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 8,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "another workout of the same kind is open: starting records it first",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "key": "daily:1",
+      "type": "open"
+     },
+     {
+      "ms": 5000,
+      "type": "advance"
+     },
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 5000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [
+      0
+     ],
+     "finishedSeconds": [
+      5
+     ],
+     "recorded": [
+      {
+       "activeSeconds": 0,
+       "key": "daily:1",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     ],
+     "saves": 6
+    },
+    "steps": [
+     {
+      "event": "open",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:1",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:1",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048005000,
+       "startedAt": 1761048005000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048005000,
+       "startedAt": 1761048005000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 5,
+      "stored": {
+       "activeSeconds": 5,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048005000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 5,
+      "stored": {
+       "activeSeconds": 5,
+       "key": "daily:3",
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048005000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 5,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "a long workout: many checkpoints",
+   "kind": "active",
+   "run": {
+    "events": [
+     {
+      "type": "start"
+     },
+     {
+      "on": true,
+      "type": "timer"
+     },
+     {
+      "ms": 300000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "visible"
+     },
+     {
+      "ms": 300000,
+      "type": "advance"
+     },
+     {
+      "on": true,
+      "type": "visible"
+     },
+     {
+      "on": false,
+      "type": "timer"
+     },
+     {
+      "on": true,
+      "type": "onScreen"
+     },
+     {
+      "ms": 61000,
+      "type": "advance"
+     },
+     {
+      "on": false,
+      "type": "onScreen"
+     },
+     {
+      "type": "finish"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "finishedSeconds": [
+      661
+     ],
+     "recorded": [],
+     "saves": 140
+    },
+    "steps": [
+     {
+      "event": "start",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 0,
+      "stored": {
+       "activeSeconds": 0,
+       "key": "daily:3",
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 300,
+      "stored": {
+       "activeSeconds": 300,
+       "key": "daily:3",
+       "lastActivityAt": 1761048300000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "visible",
+      "meterSeconds": 300,
+      "stored": {
+       "activeSeconds": 300,
+       "key": "daily:3",
+       "lastActivityAt": 1761048300000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 600,
+      "stored": {
+       "activeSeconds": 600,
+       "key": "daily:3",
+       "lastActivityAt": 1761048600000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "visible",
+      "meterSeconds": 600,
+      "stored": {
+       "activeSeconds": 600,
+       "key": "daily:3",
+       "lastActivityAt": 1761048600000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "timer",
+      "meterSeconds": 600,
+      "stored": {
+       "activeSeconds": 600,
+       "key": "daily:3",
+       "lastActivityAt": 1761048600000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "onScreen",
+      "meterSeconds": 600,
+      "stored": {
+       "activeSeconds": 600,
+       "key": "daily:3",
+       "lastActivityAt": 1761048600000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "advance",
+      "meterSeconds": 661,
+      "stored": {
+       "activeSeconds": 660,
+       "key": "daily:3",
+       "lastActivityAt": 1761048660000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "onScreen",
+      "meterSeconds": 661,
+      "stored": {
+       "activeSeconds": 661,
+       "key": "daily:3",
+       "lastActivityAt": 1761048661000,
+       "startedAt": 1761048000000
+      }
+     },
+     {
+      "event": "finish",
+      "meterSeconds": 661,
+      "stored": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "three sets: first → last",
+   "kind": "strength",
+   "run": {
+    "events": [
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 90000,
+      "type": "advance"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 120500,
+      "type": "advance"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "recorded": []
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 90,
+        "lastActivityAt": 1761048090000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 90,
+        "lastActivityAt": 1761048090000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 210,
+        "lastActivityAt": 1761048210500,
+        "startedAt": 1761048000000
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "a set exactly 2 h after the last one extends the session",
+   "kind": "strength",
+   "run": {
+    "events": [
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 7200000,
+      "type": "advance"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "recorded": []
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 60,
+        "lastActivityAt": 1761048060000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 60,
+        "lastActivityAt": 1761048060000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 7260,
+        "lastActivityAt": 1761055260000,
+        "startedAt": 1761048000000
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "a set 2 h + 1 ms after the last one records the old session and starts a new one",
+   "kind": "strength",
+   "run": {
+    "events": [
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 7200001,
+      "type": "advance"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 30000,
+      "type": "advance"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [
+      60
+     ],
+     "recorded": [
+      {
+       "dayIndex": 0,
+       "durationSeconds": 60,
+       "lastActivityAt": 1761048060000,
+       "startedAt": 1761048000000
+      }
+     ]
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 60,
+        "lastActivityAt": 1761048060000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 60,
+        "lastActivityAt": 1761048060000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761055260001,
+        "startedAt": 1761055260001
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761055260001,
+        "startedAt": 1761055260001
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 30,
+        "lastActivityAt": 1761055290001,
+        "startedAt": 1761055260001
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "closeInactive after 2 h + 1 s records it; at 2 h it stays",
+   "kind": "strength",
+   "run": {
+    "events": [
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 45000,
+      "type": "advance"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 7200000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     },
+     {
+      "ms": 1000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [
+      45
+     ],
+     "recorded": [
+      {
+       "dayIndex": 0,
+       "durationSeconds": 45,
+       "lastActivityAt": 1761048045000,
+       "startedAt": 1761048000000
+      }
+     ]
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 45,
+        "lastActivityAt": 1761048045000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 45,
+        "lastActivityAt": 1761048045000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "closeInactive",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 45,
+        "lastActivityAt": 1761048045000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 45,
+        "lastActivityAt": 1761048045000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "closeInactive",
+      "stored": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "the clock moved back: the start moves to now, never a negative duration",
+   "kind": "strength",
+   "run": {
+    "events": [
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 30000,
+      "type": "advance"
+     },
+     {
+      "ms": -600000,
+      "type": "clock"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "recorded": []
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "clock",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761047430000,
+        "startedAt": 1761047430000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761047430000,
+        "startedAt": 1761047430000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 10,
+        "lastActivityAt": 1761047440000,
+        "startedAt": 1761047430000
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "two workouts' sessions are independent",
+   "kind": "strength",
+   "run": {
+    "events": [
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "ms": 1,
+      "type": "set"
+     },
+     {
+      "ms": 7195000,
+      "type": "advance"
+     },
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [
+      0,
+      0
+     ],
+     "recorded": [
+      {
+       "dayIndex": 0,
+       "durationSeconds": 0,
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      },
+      {
+       "dayIndex": 1,
+       "durationSeconds": 0,
+       "lastActivityAt": 1761048010000,
+       "startedAt": 1761048010000
+      }
+     ]
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       },
+       {
+        "dayIndex": 1,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048010000,
+        "startedAt": 1761048010000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       },
+       {
+        "dayIndex": 1,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048010000,
+        "startedAt": 1761048010000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 1,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048010000,
+        "startedAt": 1761048010000
+       },
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761055205000,
+        "startedAt": 1761055205000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 1,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048010000,
+        "startedAt": 1761048010000
+       },
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761055205000,
+        "startedAt": 1761055205000
+       }
+      ]
+     },
+     {
+      "event": "closeInactive",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761055205000,
+        "startedAt": 1761055205000
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "a single set: duration 0",
+   "kind": "strength",
+   "run": {
+    "events": [
+     {
+      "ms": 0,
+      "type": "set"
+     },
+     {
+      "ms": 7200001,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [
+      0
+     ],
+     "recorded": [
+      {
+       "dayIndex": 0,
+       "durationSeconds": 0,
+       "lastActivityAt": 1761048000000,
+       "startedAt": 1761048000000
+      }
+     ]
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "dayIndex": 0,
+        "durationSeconds": 0,
+        "lastActivityAt": 1761048000000,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "closeInactive",
+      "stored": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "sets then the routine completed: one entry dated now, first → last set",
+   "kind": "gym",
+   "run": {
+    "events": [
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 90000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 600000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 5000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "complete"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "completed": [
+      true
+     ],
+     "progressCleared": [],
+     "recorded": [
+      {
+       "completedAt": 1761048695000,
+       "dateOfMillis": 1761048695000,
+       "durationSeconds": 690,
+       "refId": "gym:64",
+       "source": "GYM",
+       "title": "Routine 64"
+      }
+     ]
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048090000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048090000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048690000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048690000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "complete",
+      "stored": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "a completion shown again (a reload) records nothing more",
+   "kind": "gym",
+   "run": {
+    "events": [
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 64,
+      "type": "complete"
+     },
+     {
+      "ms": 64,
+      "type": "complete"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "completed": [
+      true,
+      false
+     ],
+     "progressCleared": [],
+     "recorded": [
+      {
+       "completedAt": 1761048060000,
+       "dateOfMillis": 1761048060000,
+       "durationSeconds": 60,
+       "refId": "gym:64",
+       "source": "GYM",
+       "title": "Routine 64"
+      }
+     ]
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048060000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "complete",
+      "stored": []
+     },
+     {
+      "event": "complete",
+      "stored": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "1 h 59 min without a set: still open",
+   "kind": "gym",
+   "run": {
+    "events": [
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 7140000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "completed": [],
+     "progressCleared": [],
+     "recorded": []
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048060000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048060000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "closeInactive",
+      "stored": [
+       {
+        "lastSetAt": 1761048060000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "exactly 2 h without a set: still open",
+   "kind": "gym",
+   "run": {
+    "events": [
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 7200000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "completed": [],
+     "progressCleared": [],
+     "recorded": []
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048060000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048060000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "closeInactive",
+      "stored": [
+       {
+        "lastSetAt": 1761048060000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "2 h 1 min without a set: recorded (dated on its start, at its last set) and the progress reset",
+   "kind": "gym",
+   "run": {
+    "events": [
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 7260000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [
+      60
+     ],
+     "completed": [],
+     "progressCleared": [
+      64
+     ],
+     "recorded": [
+      {
+       "completedAt": 1761048060000,
+       "dateOfMillis": 1761048000000,
+       "durationSeconds": 60,
+       "refId": "gym:64",
+       "source": "GYM",
+       "title": "Routine 64"
+      }
+     ]
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048060000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048060000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "closeInactive",
+      "stored": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "a late set after 2 h + 1 ms records the old session first, then starts a new one",
+   "kind": "gym",
+   "run": {
+    "events": [
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 30000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 7200001,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 45000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 64,
+      "type": "complete"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [
+      30
+     ],
+     "completed": [
+      true
+     ],
+     "progressCleared": [
+      64
+     ],
+     "recorded": [
+      {
+       "completedAt": 1761048030000,
+       "dateOfMillis": 1761048000000,
+       "durationSeconds": 30,
+       "refId": "gym:64",
+       "source": "GYM",
+       "title": "Routine 64"
+      },
+      {
+       "completedAt": 1761055275001,
+       "dateOfMillis": 1761055275001,
+       "durationSeconds": 45,
+       "refId": "gym:64",
+       "source": "GYM",
+       "title": "Routine 64"
+      }
+     ]
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048030000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048030000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761055230001,
+        "routineId": 64,
+        "startedAt": 1761055230001
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761055230001,
+        "routineId": 64,
+        "startedAt": 1761055230001
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761055275001,
+        "routineId": 64,
+        "startedAt": 1761055230001
+       }
+      ]
+     },
+     {
+      "event": "complete",
+      "stored": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "a manual reset discards the session without recording it",
+   "kind": "gym",
+   "run": {
+    "events": [
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 120000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 64,
+      "type": "discard"
+     },
+     {
+      "type": "closeInactive"
+     },
+     {
+      "ms": 64,
+      "type": "complete"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "completed": [
+      false
+     ],
+     "progressCleared": [],
+     "recorded": []
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048120000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "discard",
+      "stored": []
+     },
+     {
+      "event": "closeInactive",
+      "stored": []
+     },
+     {
+      "event": "complete",
+      "stored": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "the clock moved back: never closed, never negative",
+   "kind": "gym",
+   "run": {
+    "events": [
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 60000,
+      "type": "advance"
+     },
+     {
+      "ms": -10800000,
+      "type": "clock"
+     },
+     {
+      "ms": 10800000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 64,
+      "type": "complete"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [],
+     "completed": [
+      true
+     ],
+     "progressCleared": [],
+     "recorded": [
+      {
+       "completedAt": 1761048060000,
+       "dateOfMillis": 1761048060000,
+       "durationSeconds": 60,
+       "refId": "gym:64",
+       "source": "GYM",
+       "title": "Routine 64"
+      }
+     ]
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "clock",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "closeInactive",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048060000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "complete",
+      "stored": []
+     }
+    ]
+   }
+  },
+  {
+   "id": "two routines are independent",
+   "kind": "gym",
+   "run": {
+    "events": [
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "ms": 65,
+      "type": "set"
+     },
+     {
+      "ms": 7195000,
+      "type": "advance"
+     },
+     {
+      "ms": 64,
+      "type": "set"
+     },
+     {
+      "ms": 10000,
+      "type": "advance"
+     },
+     {
+      "type": "closeInactive"
+     },
+     {
+      "ms": 64,
+      "type": "complete"
+     }
+    ],
+    "result": {
+     "announcedSeconds": [
+      0,
+      0
+     ],
+     "completed": [
+      true
+     ],
+     "progressCleared": [
+      64,
+      65
+     ],
+     "recorded": [
+      {
+       "completedAt": 1761048000000,
+       "dateOfMillis": 1761048000000,
+       "durationSeconds": 0,
+       "refId": "gym:64",
+       "source": "GYM",
+       "title": "Routine 64"
+      },
+      {
+       "completedAt": 1761048010000,
+       "dateOfMillis": 1761048010000,
+       "durationSeconds": 0,
+       "refId": "gym:65",
+       "source": "GYM",
+       "title": "Routine 65"
+      },
+      {
+       "completedAt": 1761055215000,
+       "dateOfMillis": 1761055215000,
+       "durationSeconds": 0,
+       "refId": "gym:64",
+       "source": "GYM",
+       "title": "Routine 64"
+      }
+     ]
+    },
+    "steps": [
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       },
+       {
+        "lastSetAt": 1761048010000,
+        "routineId": 65,
+        "startedAt": 1761048010000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048000000,
+        "routineId": 64,
+        "startedAt": 1761048000000
+       },
+       {
+        "lastSetAt": 1761048010000,
+        "routineId": 65,
+        "startedAt": 1761048010000
+       }
+      ]
+     },
+     {
+      "event": "set",
+      "stored": [
+       {
+        "lastSetAt": 1761048010000,
+        "routineId": 65,
+        "startedAt": 1761048010000
+       },
+       {
+        "lastSetAt": 1761055205000,
+        "routineId": 64,
+        "startedAt": 1761055205000
+       }
+      ]
+     },
+     {
+      "event": "advance",
+      "stored": [
+       {
+        "lastSetAt": 1761048010000,
+        "routineId": 65,
+        "startedAt": 1761048010000
+       },
+       {
+        "lastSetAt": 1761055205000,
+        "routineId": 64,
+        "startedAt": 1761055205000
+       }
+      ]
+     },
+     {
+      "event": "closeInactive",
+      "stored": [
+       {
+        "lastSetAt": 1761055205000,
+        "routineId": 64,
+        "startedAt": 1761055205000
+       }
+      ]
+     },
+     {
+      "event": "complete",
+      "stored": []
+     }
+    ]
+   }
+  }
+ ],
+ "description": "SessionRules; active time (ActiveWorkoutSession + ActiveSessionTracker + ActiveTimeMeter, key daily:3) and set to set (ProgramStrengthSessions; GymSessionTracker with its progress reset and completion) as event sequences; wall clock starts at baseWall",
+ "domain": "sessions",
+ "generatedBy": "app/src/test/java/com/javargasp/tiominutermvi/parity/SessionGoldenTest.kt",
+ "rules": {
+  "checkpointMillis": 5000,
+  "durationSeconds": [
+   {
+    "endedAt": 0,
+    "seconds": 0,
+    "startedAt": 0
+   },
+   {
+    "endedAt": 999,
+    "seconds": 0,
+    "startedAt": 0
+   },
+   {
+    "endedAt": 1000,
+    "seconds": 1,
+    "startedAt": 0
+   },
+   {
+    "endedAt": 59999,
+    "seconds": 59,
+    "startedAt": 0
+   },
+   {
+    "endedAt": 0,
+    "seconds": 0,
+    "startedAt": 10000
+   },
+   {
+    "endedAt": 7200000,
+    "seconds": 7200,
+    "startedAt": 0
+   }
+  ],
+  "inactivityTimeoutMillis": 7200000,
+  "isInactive": [
+   {
+    "inactive": false,
+    "lastActivityAt": 0,
+    "now": 0
+   },
+   {
+    "inactive": false,
+    "lastActivityAt": 0,
+    "now": 7200000
+   },
+   {
+    "inactive": true,
+    "lastActivityAt": 0,
+    "now": 7200001
+   },
+   {
+    "inactive": false,
+    "lastActivityAt": 5000,
+    "now": 0
+   },
+   {
+    "inactive": false,
+    "lastActivityAt": 7200000,
+    "now": 0
+   },
+   {
+    "inactive": true,
+    "lastActivityAt": 0,
+    "now": 4611686018427387903
+   }
+  ],
+  "latestRun": [
+   {
+    "run": null,
+    "times": []
+   },
+   {
+    "run": [
+     5,
+     5
+    ],
+    "times": [
+     5
+    ]
+   },
+   {
+    "run": [
+     10,
+     30
+    ],
+    "times": [
+     30,
+     10,
+     20
+    ]
+   },
+   {
+    "run": [
+     0,
+     7200001
+    ],
+    "times": [
+     0,
+     7200000,
+     7200001
+    ]
+   },
+   {
+    "run": [
+     7200001,
+     7200002
+    ],
+    "times": [
+     0,
+     7200001,
+     7200002
+    ]
+   },
+   {
+    "run": [
+     7200011,
+     7200021
+    ],
+    "times": [
+     10,
+     7200011,
+     7200021
+    ]
+   }
+  ]
+ },
+ "update": "scripts/update_golden.sh"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "tiominuter-firestore-rules-tests",
+  "private": true,
+  "description": "Security rules tests for firebase/firestore.rules, run on the Firestore emulator (scripts/test_rules.sh).",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "5.0.2",
+    "firebase": "12.19.0",
+    "vitest": "4.1.12"
+  }
+}

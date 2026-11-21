@@ -1,0 +1,50 @@
+name: tiominuter_web
+description: "Tio Minuter on the web: my week, my history and my groups (read-mostly client of the Firestore model)."
+publish_to: 'none'
+version: 0.1.0
+
+# Pinned: Flutter 3.47.7 stable / Dart 3.13.5 (CLAUDE.md "Web", .github/workflows/web.yml)
+environment:
+  sdk: 3.13.5
+  flutter: 3.47.7
+
+# Exact versions; pubspec.lock pins the transitive ones too
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  firebase_core: 5.0.0
+  firebase_auth: 7.0.0
+  cloud_firestore: 7.0.0
+  flutter_bloc: 9.1.1
+  go_router: 18.1.1
+  http: 1.6.0
+  crypto: 3.0.7
+  intl: 0.20.3
+  # A dependency's widgets reference CupertinoIcons glyphs (the build warns without the font)
+  cupertino_icons: 1.0.8
+  # Browser APIs for training: localStorage, the screen wake lock, Web Audio, vibration (already in
+  # the lockfile through the Firebase web plugins)
+  web: 1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: 6.0.0
+  bloc_test: 10.0.0
+  # Registered by hand in the opt-in emulator test (flutter test --platform chrome doesn't)
+  firebase_core_web: 4.0.0
+  firebase_auth_web: 6.3.1
+  cloud_firestore_web: 5.7.4
+  image: 4.5.4
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/mascot.png

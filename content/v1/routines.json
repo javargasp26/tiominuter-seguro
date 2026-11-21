@@ -1,0 +1,1577 @@
+[
+  {
+    "routineId": 1,
+    "routineDay": "Day 1",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 90
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 15
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 10
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 60
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 45
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 15
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 45
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 15
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 8
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 20
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 15
+      }
+    ]
+  },
+  {
+    "routineId": 2,
+    "routineDay": "Day 2",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 60
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 20
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 12
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 65
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 20
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 45
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 15
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 15
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 15
+      }
+    ]
+  },
+  {
+    "routineId": 3,
+    "routineDay": "Day 3",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 8
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 20
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 70
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 40
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 20
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 45
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 15
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 20
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 15
+      }
+    ]
+  },
+  {
+    "routineId": 4,
+    "routineDay": "Day 4",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 70
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 25
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 15
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 75
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 55
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 35
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 25
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 45
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 15
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 10
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "routineId": 5,
+    "routineDay": "Day 5",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 110
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 10
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 80
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 50
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 45
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 15
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 20
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "routineId": 6,
+    "routineDay": "Day 6",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 80
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 20
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 90
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 60
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "routineId": 7,
+    "routineDay": "Day 7",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 12
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 35
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 60
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 95
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 60
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 35
+      }
+    ]
+  },
+  {
+    "routineId": 8,
+    "routineDay": "Day 8",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 90
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 35
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 25
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 70
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 40
+      }
+    ]
+  },
+  {
+    "routineId": 9,
+    "routineDay": "Day 9",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 15
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 70
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 70
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 40
+      }
+    ]
+  },
+  {
+    "routineId": 10,
+    "routineDay": "Day 10",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 110
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 60
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 50
+      }
+    ]
+  },
+  {
+    "routineId": 11,
+    "routineDay": "Day 11",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 110
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 20
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 45
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 110
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 80
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 45
+      }
+    ]
+  },
+  {
+    "routineId": 12,
+    "routineDay": "Day 12",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 110
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 45
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 35
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 90
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 70
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 50
+      }
+    ]
+  },
+  {
+    "routineId": 13,
+    "routineDay": "Day 13",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 25
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 90
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 90
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 50
+      }
+    ]
+  },
+  {
+    "routineId": 14,
+    "routineDay": "Day 14",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 15,
+    "routineDay": "Day 15",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 16,
+    "routineDay": "Day 16",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 17,
+    "routineDay": "Day 17",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 18,
+    "routineDay": "Day 18",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 19,
+    "routineDay": "Day 19",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 20,
+    "routineDay": "Day 20",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 21,
+    "routineDay": "Day 21",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 22,
+    "routineDay": "Day 22",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 23,
+    "routineDay": "Day 23",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 24,
+    "routineDay": "Day 24",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 25,
+    "routineDay": "Day 25",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 26,
+    "routineDay": "Day 26",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 27,
+    "routineDay": "Day 27",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 28,
+    "routineDay": "Day 28",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 29,
+    "routineDay": "Day 29",
+    "exercises": [
+      {
+        "exerciseId": 1,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 11,
+        "type": "REPS",
+        "amount": 30
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 6,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 10,
+        "type": "TIME",
+        "amount": 100
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "routineId": 30,
+    "routineDay": "Day 30",
+    "exercises": [
+      {
+        "exerciseId": 9,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 2,
+        "type": "REPS",
+        "amount": 50
+      },
+      {
+        "exerciseId": 3,
+        "type": "REPS",
+        "amount": 40
+      },
+      {
+        "exerciseId": 4,
+        "type": "TIME",
+        "amount": 120
+      },
+      {
+        "exerciseId": 13,
+        "type": "TIME",
+        "amount": 30
+      },
+      {
+        "exerciseId": 5,
+        "type": "REPS",
+        "amount": 100
+      },
+      {
+        "exerciseId": 8,
+        "type": "REPS",
+        "amount": 80
+      },
+      {
+        "exerciseId": 7,
+        "type": "REPS",
+        "amount": 60
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+# Gitleaks: reglas por defecto + excepciones triageadas (Lab 3, 20-nov-2026).
+# Cada excepcion lleva su razon. Las API keys reales de Firebase NO estan en este repo.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Claves de traduccion (titleKey/parsedKey) que generic-api-key confunde con secretos"
+paths = ['''^shared/golden/workout_names\.json$''']
+
+[[allowlists]]
+description = "Datos de prueba: JWT sintetico sin claims (firma de 12 chars) y referencia a DefaultFirebaseOptions sin valor"
+paths = ['''^app/src/test/.*/GoogleCredentialMappingTest\.kt$''', '''^web/test/ui/sign_in_redirect_test\.dart$''']

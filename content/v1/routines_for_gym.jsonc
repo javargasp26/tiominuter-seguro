@@ -1,0 +1,163 @@
+[
+  {
+    "routineId": 64,
+    "routineName": "Pull Day",
+    "routineNameEs": "Día de tirón",
+    "exercises": [
+      { "exerciseId": 18, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 72, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 73, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 74, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 75, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 76, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 77, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 78, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 79, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 80, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 81, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 }
+    ]
+  },
+  {
+    "routineId": 65,
+    "routineName": "Push Day",
+    "routineNameEs": "Día de empuje",
+    "exercises": [
+      { "exerciseId": 85, "type": "REPS", "set": 4, "reps": [12,12,12,12], "rest": 30 },
+      { "exerciseId": 82, "type": "REPS", "set": 4, "reps": [6,6,6,6], "rest": 60 },
+      { "exerciseId": 83, "type": "REPS", "set": 4, "reps": [6,6,6,6], "rest": 60 },
+      { "exerciseId": 84, "type": "REPS", "set": 4, "reps": [6,6,6,6], "rest": 60 },
+      { "exerciseId": 86, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 87, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 88, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 89, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 90, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 91, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 }
+    ]
+  },
+  {
+    "routineId": 66,
+    "routineName": "Leg Day",
+    "routineNameEs": "Día de pierna",
+    "exercises": [
+      { "exerciseId": 55, "type": "REPS", "set": 3, "reps": [6,6,6], "rest": 60 },
+      { "exerciseId": 92, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 60 },
+      { "exerciseId": 97, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 60 },
+      { "exerciseId": 20, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 45 },
+      { "exerciseId": 94, "type": "REPS", "set": 4, "reps": [12,12,12,12], "rest": 45 },
+      { "exerciseId": 31, "type": "REPS", "set": 4, "reps": [12,12,12,12], "rest": 45 },
+      { "exerciseId": 96, "type": "REPS", "set": 4, "reps": [15,15,15,15], "rest": 45 },
+      { "exerciseId": 50, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 40 },
+      { "exerciseId": 51, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 40 }
+    ]
+  },
+  {
+    "routineId":67,
+    "routineName":"Arms Day",
+    "routineNameEs":"Día de brazos",
+    "exercises": [
+      {"exerciseId":90,"type":"REPS","set":4,"reps":[10,10,10,10],"rest":60},
+      {"exerciseId":89,"type":"REPS","set":4,"reps":[8,8,8,8],"rest":60},
+      {"exerciseId":85,"type":"REPS","set":4,"reps":[15,15,15,15],"rest":45},
+      {"exerciseId":98,"type":"REPS","set":4,"reps":[10,10,10,10],"rest":45},
+      {"exerciseId":79,"type":"REPS","set":4,"reps":[8,8,8,8],"rest":60},
+      {"exerciseId":54,"type":"REPS","set":4,"reps":[15,15,15,15],"rest":45}]
+  },
+  {
+    "routineId":68,
+    "routineName":"Shoulder and Leg Day",
+    "routineNameEs":"Hombro y pierna",
+    "exercises": [
+      { "exerciseId": 31, "type": "REPS", "set": 4, "reps": [12,12,12,12], "rest": 45 },
+      { "exerciseId": 96, "type": "REPS", "set": 4, "reps": [15,15,15,15], "rest": 45 },
+      { "exerciseId": 56, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 57, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 86, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 60 },
+      { "exerciseId": 88, "type": "REPS", "set": 4, "reps": [12,12,12,12], "rest": 45 },
+      { "exerciseId": 78, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 45 },
+      { "exerciseId": 48, "type": "REPS", "set": 4, "reps": [15,15,15,15], "rest": 45 }
+    ]
+  },
+  {
+    "routineId": 69,
+    "routineName": "Back",
+    "routineNameEs": "Espalda",
+    "exercises": [
+      { "exerciseId": 73, "type": "REPS", "set": 4, "reps": [12,12,12,12], "rest": 45 },
+      { "exerciseId": 74, "type": "REPS", "set": 4, "reps": [8,8,8,8], "rest": 60 },
+      { "exerciseId": 68, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 45 },
+      { "exerciseId": 69, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 45 },
+      { "exerciseId": 76, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 45 },
+      { "exerciseId": 52, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 79, "type": "REPS", "set": 3, "reps": [8,8,8], "rest": 60 },
+      { "exerciseId": 81, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 45 }
+    ]
+  },
+  {
+    "routineId": 71,
+    "routineName": "Chest",
+    "routineNameEs": "Pecho",
+    "exercises": [
+      { "exerciseId": 82, "type": "REPS", "set": 4, "reps": [8,8,8,8], "rest": 60 },
+      { "exerciseId": 66, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 45 },
+      { "exerciseId": 32, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 45 },
+      { "exerciseId": 85, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 60 },
+      { "exerciseId": 89, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 45 },
+      { "exerciseId": 90, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 45 },
+      { "exerciseId": 62, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 45 }
+    ]
+  },
+  {
+    "routineId": 72,
+    "routineName": "Glutes & Legs",
+    "routineNameEs": "Glúteo y pierna",
+    "exercises": [
+      { "exerciseId": 93, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 60 },
+      { "exerciseId": 117, "type": "REPS", "set": 4, "reps": [10,10,10,10], "rest": 60 },
+      { "exerciseId": 92, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 60 },
+      { "exerciseId": 57, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 45 },
+      { "exerciseId": 31, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 45 },
+      { "exerciseId": 60, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 45 },
+      { "exerciseId": 96, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 40 }
+    ]
+  },
+  {
+    "routineId": 73,
+    "routineName": "Legs & Core",
+    "routineNameEs": "Pierna y core",
+    "exercises": [
+      { "exerciseId": 55, "type": "REPS", "set": 4, "reps": [8,8,8,8], "rest": 90 },
+      { "exerciseId": 94, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 45 },
+      { "exerciseId": 24, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 45 },
+      { "exerciseId": 56, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 45 },
+      { "exerciseId": 50, "type": "REPS", "set": 3, "reps": [15,15,15], "rest": 40 },
+      { "exerciseId": 4, "type": "TIME", "set": 3, "reps": [30,40,45], "rest": 30 },
+      { "exerciseId": 28, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 45 }
+    ]
+  },
+  {
+    "routineId": 74,
+    "routineName": "Full Body A",
+    "routineNameEs": "Cuerpo completo A",
+    "exercises": [
+      { "exerciseId": 55, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 90 },
+      { "exerciseId": 116, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 90 },
+      { "exerciseId": 68, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 60 },
+      { "exerciseId": 93, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 60 },
+      { "exerciseId": 86, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 60 },
+      { "exerciseId": 4, "type": "TIME", "set": 3, "reps": [30,30,30], "rest": 30 }
+    ]
+  },
+  {
+    "routineId": 75,
+    "routineName": "Full Body B",
+    "routineNameEs": "Cuerpo completo B",
+    "exercises": [
+      { "exerciseId": 117, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 90 },
+      { "exerciseId": 66, "type": "REPS", "set": 3, "reps": [10,10,10], "rest": 60 },
+      { "exerciseId": 69, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 60 },
+      { "exerciseId": 92, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 60 },
+      { "exerciseId": 16, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 45 },
+      { "exerciseId": 7, "type": "REPS", "set": 3, "reps": [12,12,12], "rest": 45 }
+    ]
+  }
+]

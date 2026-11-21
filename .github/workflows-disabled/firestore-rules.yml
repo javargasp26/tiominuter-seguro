@@ -1,0 +1,57 @@
+# Tests firebase/firestore.rules on the Firestore emulator (firebase/rules-tests).
+# Never deploys: the rules are deployed by hand after merging to main
+# (firebase deploy --only firestore:rules,firestore:indexes --project tiominuter-e43f7).
+name: Firestore rules
+
+on:
+  pull_request:
+    paths:
+      - "firebase/**"
+      - "shared/**"
+      - "firebase.json"
+      - "scripts/test_rules.sh"
+      - ".github/workflows/firestore-rules.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "firebase/**"
+      - "shared/**"
+      - "firebase.json"
+      - "scripts/test_rules.sh"
+      - ".github/workflows/firestore-rules.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  rules-tests:
+    name: Rules tests (emulator)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: firebase/rules-tests/package-lock.json
+
+      # The Firestore emulator is a Java program
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Install the test dependencies
+        run: npm ci --prefix firebase/rules-tests
+
+      - name: Install firebase-tools
+        run: npm install --global firebase-tools@15.34.0
+
+      - name: Shared fixtures are up to date
+        run: node scripts/export_fixtures.mjs --check
+
+      - name: Run the rules tests
+        run: scripts/test_rules.sh

@@ -1,0 +1,78 @@
+# Publishes Firebase Hosting (https://tiominuter-e43f7.web.app): the Flutter web app at the root and
+# the content at /content/v1/..., after the content gate and the web gate. Only changes to the
+# content, the web app, the shared fixtures or the Hosting config on main deploy; other code
+# changes never do. Hosting only: the service account has Hosting admin, nothing else.
+name: Hosting deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "content/**"
+      - "web/**"
+      - "shared/**"
+      - "firebase.json"
+      - "scripts/stage_hosting.py"
+      - ".github/workflows/content-deploy.yml"
+
+# One deploy at a time; a newer push waits for the running one instead of cancelling it.
+concurrency:
+  group: content-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    uses: ./.github/workflows/content-validate.yml
+
+  web:
+    uses: ./.github/workflows/web.yml
+
+  deploy:
+    name: Deploy to Firebase Hosting
+    needs: [validate, web]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.47.7"
+          channel: stable
+          cache: true
+
+      - name: Check the service account secret
+        env:
+          SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TIOMINUTER_E43F7 }}
+        run: |
+          if [ -z "$SERVICE_ACCOUNT" ]; then
+            echo "::error::Secret FIREBASE_SERVICE_ACCOUNT_TIOMINUTER_E43F7 is not set (create it with: firebase init hosting:github)"
+            exit 1
+          fi
+
+      - name: Build the web app
+        working-directory: web
+        run: |
+          flutter pub get --enforce-lockfile
+          flutter build web --release --no-wasm-dry-run
+
+      - name: Build the manifest
+        run: python3 scripts/build_manifest.py
+
+      # Also the predeploy step of firebase.json; run here so the deploy input is explicit.
+      - name: Stage the Hosting public folder
+        run: python3 scripts/stage_hosting.py
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TIOMINUTER_E43F7 }}
+          channelId: live
+          projectId: tiominuter-e43f7

@@ -1,0 +1,788 @@
+rules_version = '2';
+
+// Tío Minuter: each person's data lives under users/{uid} and only that person can read or
+// write it. Groups (groups/{groupId}, inviteCodes/{code}) are shared by their members; every
+// group operation is a batched write whose documents the rules check against each other with
+// get / getAfter / existsAfter (no Cloud Functions). A group's feed (groups/{groupId}/posts) is
+// read by its members only. Every write is validated field by field.
+// Model: docs/firestore-model.md.
+// Every model change needs a rules change here and a case in firebase/rules-tests/.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---------- Common helpers ----------
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    // updatedAt is the server time of this write, schemaVersion is the current model
+    function syncFieldsOk(d) {
+      return d.updatedAt == request.time && d.deleted is bool && d.schemaVersion == 1;
+    }
+
+    function hasExactly(d, required, optional) {
+      return d.keys().hasAll(required) && d.keys().hasOnly(required.concat(optional));
+    }
+
+    function isUuid(v) {
+      return v is string && v.matches('^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$');
+    }
+
+    // "YYYY-MM-DD" (month 01-12, day 01-31) as LocalDateProvider writes it (Locale.ROOT digits;
+    // a year past 9999 from a wrong device clock gets more digits)
+    function isLocalDate(v) {
+      return v is string && v.matches('^[0-9]{4,}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$');
+    }
+
+    // Epoch millis as Room stores them: any value, since they come from the device clock
+    function isMillis(v) {
+      return v is int;
+    }
+
+    function isIntIn(v, low, high) {
+      return v is int && v >= low && v <= high;
+    }
+
+    // Absent or null, or a string of at most max characters
+    function optionalString(d, key, max) {
+      return d.get(key, null) == null || (d[key] is string && d[key].size() <= max);
+    }
+
+    // A deletion: only the id field, deleted == true, updatedAt and schemaVersion
+    function isTombstone(idField, id) {
+      let d = incoming();
+      return hasExactly(d, [idField, 'deleted', 'updatedAt', 'schemaVersion'], [])
+        && d[idField] == id
+        && d.deleted == true
+        && syncFieldsOk(d);
+    }
+
+    function canCreate(valid, tombstone) {
+      return valid || tombstone;
+    }
+
+    // Random ids (UUIDs): a tombstone is final, so a late edit from an offline device can't
+    // bring back a deleted entry or program (their ids are never reused)
+    function canUpdateRandomId(valid, tombstone) {
+      return tombstone || (valid && resource.data.deleted == false);
+    }
+
+    // Natural ids (a week, "{week}-{dayIndex}"): the same id comes back after a deletion, so a
+    // full valid doc may replace a tombstone (last write wins, as for any update)
+    function canUpdateNaturalId(valid, tombstone) {
+      return valid || tombstone;
+    }
+
+    // ---------- users/{uid}: profile ----------
+
+    function isValidUser() {
+      let d = incoming();
+      return hasExactly(d, ['createdAt', 'updatedAt', 'deleted', 'schemaVersion'], ['displayName', 'photoUrl'])
+        && optionalString(d, 'displayName', 500)
+        && optionalString(d, 'photoUrl', 2048)
+        && (d.get('photoUrl', null) == null || d.photoUrl.matches('^https://.+'))
+        && d.createdAt is timestamp
+        && d.deleted == false
+        && syncFieldsOk(d);
+    }
+
+    // ---------- users/{uid}/trainingLog/{entryId} ----------
+
+    function isValidTrainingEntry(entryId) {
+      let d = incoming();
+      return hasExactly(
+          d,
+          ['entryId', 'dateLocal', 'completedAt', 'source', 'title', 'createdAt', 'updatedAt', 'deleted', 'schemaVersion'],
+          ['refId', 'durationSeconds', 'activityType', 'intensity', 'note'])
+        && d.entryId == entryId
+        && isUuid(d.entryId)
+        && isLocalDate(d.dateLocal)
+        && isMillis(d.completedAt)
+        && isMillis(d.createdAt)
+        && d.source in ['DAILY', 'GYM', 'PROGRAM', 'ACTIVITY']
+        && d.title is string && d.title.size() <= 500
+        && optionalString(d, 'refId', 200)
+        && optionalString(d, 'note', 200)
+        && (d.get('durationSeconds', null) == null || isIntIn(d.durationSeconds, 0, 2147483647)) // Kotlin Int; never negative
+        && (d.source == 'ACTIVITY' ? isValidActivityFields(d) : hasNoActivityFields(d))
+        && d.deleted == false
+        && syncFieldsOk(d);
+    }
+
+    // A logged activity (ActivityEntryRules): type, intensity and 1-600 minutes required, name <= 40.
+    // Never stricter than the app: see the constraints table in docs/firestore-model.md
+    function isValidActivityFields(d) {
+      return d.get('activityType', null) in [
+          'OWN_GYM_ROUTINE', 'RUNNING', 'WALKING', 'CYCLING', 'SWIMMING', 'YOGA', 'PILATES', 'DANCE',
+          'TEAM_SPORT', 'RACKET_SPORT', 'MARTIAL_ARTS', 'HIIT', 'STRETCHING', 'OTHER']
+        && d.get('intensity', null) in ['EASY', 'MODERATE', 'HARD']
+        && isIntIn(d.get('durationSeconds', null), 60, 36000)
+        && d.title.size() <= 40
+        && d.get('refId', null) == null;
+    }
+
+    // Workouts of the app's routines have no activity type or intensity
+    function hasNoActivityFields(d) {
+      return d.get('activityType', null) == null && d.get('intensity', null) == null;
+    }
+
+    // ---------- users/{uid}/weeklyGoals/{effectiveFromWeek} ----------
+
+    function isValidWeeklyGoal(week) {
+      let d = incoming();
+      return hasExactly(d, ['effectiveFromWeek', 'workoutsPerWeek', 'updatedAt', 'deleted', 'schemaVersion'], [])
+        && d.effectiveFromWeek == week
+        && isLocalDate(d.effectiveFromWeek)
+        && isIntIn(d.workoutsPerWeek, 1, 14)
+        && d.deleted == false
+        && syncFieldsOk(d);
+    }
+
+    // ---------- users/{uid}/programs/{programId} and its workouts and completions ----------
+
+    // Ranges of ProgramProfile (age, weight, height, weeks, days per week)
+    function isValidProgram(programId) {
+      let d = incoming();
+      return hasExactly(
+          d,
+          ['programId', 'goal', 'level', 'location', 'focus', 'weeks', 'daysPerWeek', 'age', 'weightKg',
+           'heightCm', 'createdAt', 'updatedAt', 'deleted', 'schemaVersion'],
+          [])
+        && d.programId == programId
+        && isUuid(d.programId)
+        && d.goal in ['GAIN_MUSCLE', 'LOSE_FAT']
+        && d.level in ['BEGINNER', 'INTERMEDIATE', 'ADVANCED']
+        && d.location in ['HOME', 'GYM']
+        && d.focus in ['BALANCED', 'LOWER_BODY', 'UPPER_BODY', 'CORE']
+        && isIntIn(d.weeks, 4, 12)
+        && isIntIn(d.daysPerWeek, 2, 5)
+        && isIntIn(d.age, 16, 90)
+        && d.weightKg is number && d.weightKg >= 30 && d.weightKg <= 250
+        && isIntIn(d.heightCm, 120, 230)
+        && isMillis(d.createdAt)
+        && d.deleted == false
+        && syncFieldsOk(d);
+    }
+
+    // workoutId is "{week}-{dayIndex}" and matches the path
+    function isWorkoutKey(d, workoutId) {
+      return isIntIn(d.week, 1, 12)
+        && isIntIn(d.dayIndex, 0, 4)
+        && d.workoutId == workoutId
+        && workoutId == string(d.week) + '-' + string(d.dayIndex);
+    }
+
+    // payload: the generated workout as JSON (the app decodes and checks it)
+    function isValidProgramWorkout(workoutId) {
+      let d = incoming();
+      return hasExactly(
+          d,
+          ['workoutId', 'week', 'dayIndex', 'kind', 'isDeload', 'payload', 'updatedAt', 'deleted', 'schemaVersion'],
+          [])
+        && isWorkoutKey(d, workoutId)
+        && d.kind in ['STRENGTH', 'OUTDOOR_RUN', 'TREADMILL', 'HOME_CIRCUIT']
+        && d.isDeload is bool
+        && d.payload is string && d.payload.size() >= 2 && d.payload.size() <= 200000
+        && d.deleted == false
+        && syncFieldsOk(d);
+    }
+
+    function isValidProgramCompletion(workoutId) {
+      let d = incoming();
+      return hasExactly(d, ['workoutId', 'week', 'dayIndex', 'completedAt', 'updatedAt', 'deleted', 'schemaVersion'], [])
+        && isWorkoutKey(d, workoutId)
+        && isMillis(d.completedAt)
+        && d.deleted == false
+        && syncFieldsOk(d);
+    }
+
+    // ---------- users/{uid}/dailyProgress/state ----------
+
+    // The daily routines' unlock: one document (id "state"), merged by the clients (the higher
+    // cycle, then the further day), so never tombstoned and without a deleted field. Any day the
+    // model holds (0-999) and any cycle a Kotlin Int can count; no order is enforced here (a refused
+    // write would block a whole sync batch), the clients keep the more advanced state.
+    function isValidDailyProgress() {
+      let d = incoming();
+      return hasExactly(d, ['lastCompletedDay', 'cycle', 'updatedAt', 'schemaVersion'], [])
+        && isIntIn(d.lastCompletedDay, 0, 999)
+        && isIntIn(d.cycle, 0, 2147483647)
+        && d.updatedAt == request.time
+        && d.schemaVersion == 1;
+    }
+
+
+    // ---------- Groups: helpers ----------
+
+    // Groups need a real account (Google): never a guest, never an anonymous Firebase user
+    function isSignedIn() {
+      return request.auth != null && request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
+
+    function isSignedInAs(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function groupPath(groupId) {
+      return /databases/$(database)/documents/groups/$(groupId);
+    }
+
+    function memberPath(groupId, uid) {
+      return /databases/$(database)/documents/groups/$(groupId)/members/$(uid);
+    }
+
+    function invitePath(code) {
+      return /databases/$(database)/documents/inviteCodes/$(code);
+    }
+
+    function membershipPath(uid, groupId) {
+      return /databases/$(database)/documents/users/$(uid)/groups/$(groupId);
+    }
+
+    function groupCounterPath(uid) {
+      return /databases/$(database)/documents/users/$(uid)/meta/groups;
+    }
+
+    function isMemberOf(groupId) {
+      return isSignedIn() && exists(memberPath(groupId, request.auth.uid));
+    }
+
+    // Firestore auto ids (collection.document().id)
+    function isGroupId(v) {
+      return v is string && v.matches('^[A-Za-z0-9]{20}$');
+    }
+
+    // 8 characters, uppercase, without 0 O 1 I L
+    function isInviteCode(v) {
+      return v is string && v.matches('^[2-9A-HJKMNP-Z]{8}$');
+    }
+
+    // 1-40 characters, not only spaces, one line
+    function isGroupName(v) {
+      return v is string && v.size() >= 1 && v.size() <= 40 && v.matches('.*[^ ].*');
+    }
+
+    // "YYYY-MM-DD" that is a Monday (an impossible date like 2026-02-30 is an error, so denied)
+    function isMonday(v) {
+      return v is string
+        && v.matches('^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$')
+        && timestamp.date(int(v[0:4]), int(v[5:7]), int(v[8:10])).dayOfWeek() == 1;
+    }
+
+    // One day of daysThisWeek: absent, or a list of distinct sources (at most the 4 of them)
+    function isDaySources(days, key) {
+      return !(key in days)
+        || (days[key] is list
+          && days[key].size() <= 4
+          && days[key].toSet().size() == days[key].size()
+          && days[key].toSet().hasOnly(['DAILY', 'GYM', 'PROGRAM', 'ACTIVITY']));
+    }
+
+    function isDaysThisWeek(days) {
+      return days is map
+        && days.keys().hasOnly(['1', '2', '3', '4', '5', '6', '7'])
+        && isDaySources(days, '1') && isDaySources(days, '2') && isDaySources(days, '3')
+        && isDaySources(days, '4') && isDaySources(days, '5') && isDaySources(days, '6')
+        && isDaySources(days, '7');
+    }
+
+    // ---------- groups/{groupId} ----------
+
+    // memberChangeUid: the member who joined, left or was removed by the write that last changed
+    // memberCount, so the group and that member's document can be checked against each other
+    function isValidGroup() {
+      let d = incoming();
+      return hasExactly(
+          d,
+          ['name', 'ownerUid', 'inviteCode', 'memberCount', 'memberChangeUid', 'createdAt', 'updatedAt', 'schemaVersion'],
+          [])
+        && isGroupName(d.name)
+        && d.ownerUid is string
+        && isInviteCode(d.inviteCode)
+        && isIntIn(d.memberCount, 1, 20)
+        && d.memberChangeUid is string
+        && d.createdAt is timestamp
+        && d.updatedAt == request.time
+        && d.schemaVersion == 1;
+    }
+
+    // Create: the creator is the owner and the only member; their member document, the invite
+    // code and their membership index are written in the same batch
+    function isGroupCreate(groupId) {
+      let d = incoming();
+      return isGroupId(groupId)
+        && isValidGroup()
+        && d.ownerUid == request.auth.uid
+        && d.memberChangeUid == request.auth.uid
+        && d.memberCount == 1
+        && d.createdAt == request.time
+        && existsAfter(memberPath(groupId, request.auth.uid))
+        && getAfter(invitePath(d.inviteCode)).data.groupId == groupId;
+    }
+
+    function changedOnly(keys) {
+      return incoming().diff(resource.data).affectedKeys().hasOnly(keys);
+    }
+
+    // Join: memberCount + 1 (at most 20), the joiner's member document created in this batch
+    // (its rule checks the invite code)
+    function isJoin(groupId) {
+      let d = incoming();
+      return changedOnly(['memberCount', 'memberChangeUid', 'updatedAt'])
+        && d.memberCount == resource.data.memberCount + 1
+        && d.memberCount <= 20
+        && d.memberChangeUid == request.auth.uid
+        && !exists(memberPath(groupId, request.auth.uid))
+        && existsAfter(memberPath(groupId, request.auth.uid));
+    }
+
+    // Leave: memberCount - 1 and the leaver's member document deleted in this batch. The owner
+    // can only leave by handing the group to another member in the same write (when alone, the
+    // group is deleted instead)
+    function isLeave(groupId) {
+      let d = incoming();
+      return changedOnly(['memberCount', 'memberChangeUid', 'ownerUid', 'updatedAt'])
+        && d.memberCount == resource.data.memberCount - 1
+        && d.memberChangeUid == request.auth.uid
+        && exists(memberPath(groupId, request.auth.uid))
+        && !existsAfter(memberPath(groupId, request.auth.uid))
+        && (resource.data.ownerUid == request.auth.uid
+          ? d.ownerUid != request.auth.uid && existsAfter(memberPath(groupId, d.ownerUid))
+          : d.ownerUid == resource.data.ownerUid);
+    }
+
+    function isGroupOwner() {
+      return resource.data.ownerUid == request.auth.uid;
+    }
+
+    // Remove member (owner): memberCount - 1, that member's document deleted in this batch
+    function isRemoveMember(groupId) {
+      let d = incoming();
+      return isGroupOwner()
+        && changedOnly(['memberCount', 'memberChangeUid', 'updatedAt'])
+        && d.memberCount == resource.data.memberCount - 1
+        && d.memberChangeUid != request.auth.uid
+        && exists(memberPath(groupId, d.memberChangeUid))
+        && !existsAfter(memberPath(groupId, d.memberChangeUid));
+    }
+
+    // Transfer (owner): the new owner is another current member
+    function isTransfer(groupId) {
+      let d = incoming();
+      return isGroupOwner()
+        && changedOnly(['ownerUid', 'updatedAt'])
+        && d.ownerUid != request.auth.uid
+        && exists(memberPath(groupId, d.ownerUid));
+    }
+
+    // Rename (owner): the invite code document gets the same name in this batch
+    function isRename() {
+      let d = incoming();
+      return isGroupOwner()
+        && changedOnly(['name', 'updatedAt'])
+        && getAfter(invitePath(d.inviteCode)).data.groupName == d.name;
+    }
+
+    // Regenerate the code (owner): the old code document is deleted and the new one created in
+    // this batch, so the old code stops working at once
+    function isRegenerateCode(groupId) {
+      let d = incoming();
+      return isGroupOwner()
+        && changedOnly(['inviteCode', 'updatedAt'])
+        && d.inviteCode != resource.data.inviteCode
+        && !existsAfter(invitePath(resource.data.inviteCode))
+        && getAfter(invitePath(d.inviteCode)).data.groupId == groupId;
+    }
+
+    // Delete (owner, also an owner leaving alone): the invite code and the owner's own member
+    // document go in the same batch; the app deletes every other member document too (the rules
+    // can't count them: a missed one is unreadable and its user can delete it)
+    function isGroupDelete(groupId) {
+      return isGroupOwner()
+        && !existsAfter(invitePath(resource.data.inviteCode))
+        && !existsAfter(memberPath(groupId, request.auth.uid));
+    }
+
+    // ---------- groups/{groupId}/members/{uid} ----------
+
+    // What other members may see: name, photo, the weekly summary and the sources of each day.
+    // No durations, notes, titles, measurements or photos of workouts
+    function isValidMember() {
+      let d = incoming();
+      return hasExactly(
+          d,
+          ['displayName', 'photoUrl', 'joinedAt', 'inviteCode', 'weekStartLocal', 'workoutsThisWeek', 'weeklyGoal',
+           'streakWeeks', 'daysThisWeek', 'lastTrainedLocal', 'updatedAt', 'schemaVersion'],
+          [])
+        && d.displayName is string && d.displayName.size() >= 1 && d.displayName.size() <= 100
+        && (d.photoUrl == null || (d.photoUrl is string && d.photoUrl.size() <= 2048 && d.photoUrl.matches('^https://.+')))
+        && d.joinedAt is timestamp
+        && isInviteCode(d.inviteCode)
+        && isMonday(d.weekStartLocal)
+        && isIntIn(d.workoutsThisWeek, 0, 100)
+        && isIntIn(d.weeklyGoal, 1, 14)
+        && isIntIn(d.streakWeeks, 0, 1000)
+        && isDaysThisWeek(d.daysThisWeek)
+        && (d.lastTrainedLocal == null || isLocalDate(d.lastTrainedLocal))
+        && d.updatedAt == request.time
+        && d.schemaVersion == 1;
+    }
+
+    // Created by the member: with the group (its owner) or joining it (memberCount + 1). The
+    // inviteCode proves the join: it is the group's current code and that code points to the
+    // group. The membership index is written in the same batch (it enforces the 5-group limit)
+    function isMemberCreate(groupId, uid) {
+      let d = incoming();
+      let group = getAfter(groupPath(groupId)).data;
+      return isSignedInAs(uid)
+        && isValidMember()
+        && d.joinedAt == request.time
+        && d.inviteCode == group.inviteCode
+        && getAfter(invitePath(d.inviteCode)).data.groupId == groupId
+        && existsAfter(membershipPath(uid, groupId))
+        && (exists(groupPath(groupId))
+          ? group.memberCount == get(groupPath(groupId)).data.memberCount + 1 && group.memberChangeUid == uid
+          : group.ownerUid == uid);
+    }
+
+    // The group is deleted in this batch (or is already gone), or memberCount - 1 for this member
+    function isMemberRemovedFromGroup(groupId, uid) {
+      return !existsAfter(groupPath(groupId))
+        || (getAfter(groupPath(groupId)).data.memberCount == get(groupPath(groupId)).data.memberCount - 1
+          && getAfter(groupPath(groupId)).data.memberChangeUid == uid);
+    }
+
+    // Leaving (own document, with the membership index) or removed by the owner
+    function isMemberDelete(groupId, uid) {
+      return (isSignedInAs(uid)
+          && !existsAfter(membershipPath(uid, groupId))
+          && isMemberRemovedFromGroup(groupId, uid))
+        || (isSignedIn()
+          && uid != request.auth.uid
+          && get(groupPath(groupId)).data.ownerUid == request.auth.uid
+          && isMemberRemovedFromGroup(groupId, uid));
+    }
+
+    // ---------- inviteCodes/{code} ----------
+
+    function isValidInvite(code) {
+      let d = incoming();
+      return hasExactly(d, ['groupId', 'groupName', 'createdAt', 'schemaVersion'], [])
+        && isInviteCode(code)
+        && isGroupId(d.groupId)
+        && isGroupName(d.groupName)
+        && d.createdAt is timestamp
+        && d.schemaVersion == 1;
+    }
+
+    // Created with its group or by a regeneration: the group (after the batch) is owned by the
+    // writer, uses this code and has this name
+    function isInviteCreate(code) {
+      let d = incoming();
+      let group = getAfter(groupPath(d.groupId)).data;
+      return isSignedIn()
+        && isValidInvite(code)
+        && d.createdAt == request.time
+        && group.ownerUid == request.auth.uid
+        && group.inviteCode == code
+        && group.name == d.groupName;
+    }
+
+    // Rename: only groupName changes, to the group's new name
+    function isInviteRename(code) {
+      let d = incoming();
+      return isSignedIn()
+        && isValidInvite(code)
+        && changedOnly(['groupName'])
+        && get(groupPath(d.groupId)).data.ownerUid == request.auth.uid
+        && getAfter(groupPath(d.groupId)).data.name == d.groupName;
+    }
+
+    // Deleted by the owner with its group, or replaced by a regenerated code
+    function isInviteDelete(code) {
+      let groupId = resource.data.groupId;
+      return isSignedIn()
+        && get(groupPath(groupId)).data.ownerUid == request.auth.uid
+        && (!existsAfter(groupPath(groupId)) || getAfter(groupPath(groupId)).data.inviteCode != code);
+    }
+
+    // ---------- groups/{groupId}/posts/{postId} (Feed) ----------
+
+    // A post lives 8 days from its creation, both on the server's clock (no device time is ever
+    // compared): after that any member may delete it (the cleanup path on Spark, which has no TTL)
+    function postExpiry() {
+      return resource.data.createdAt + duration.value(8, 'd');
+    }
+
+    // Members of an existing group read the feed and react
+    function isFeedMember(groupId) {
+      return isMemberOf(groupId) && exists(groupPath(groupId));
+    }
+
+    function isPostThumb(d) {
+      return d.get('thumb', null) == null || (d.thumb is bytes && d.thumb.size() <= 65536);
+    }
+
+    // The workout name as a locale-free key, so each reader names it in their own language:
+    // "gym/<routineId>", "daily/<dayNumber>" or "program/<CODE>", only for its own source, at
+    // most 80 characters. Optional (older apps and activities send none); it never changes,
+    // because the only updates allowed (thumbnail, reaction) change nothing else
+    function isPostTitleKey(d) {
+      return d.get('titleKey', null) == null
+        || (d.titleKey is string && d.titleKey.size() <= 80
+          && ((d.source == 'GYM' && d.titleKey.matches('^gym/[1-9][0-9]{0,8}$'))
+            || (d.source == 'DAILY' && d.titleKey.matches('^daily/[1-9][0-9]{0,8}$'))
+            || (d.source == 'PROGRAM' && d.titleKey.matches('^program/[A-Z][A-Z0-9_]*$'))));
+    }
+
+    // "YYYY-MM-DD" inside the week that starts on [monday]
+    function isDateInWeek(date, monday) {
+      let day = timestamp.date(int(date[0:4]), int(date[5:7]), int(date[8:10]));
+      let start = timestamp.date(int(monday[0:4]), int(monday[5:7]), int(monday[8:10]));
+      return day >= start && day < start + duration.value(7, 'd');
+    }
+
+    // What the group sees of one counted workout: the author, the source, the title the author's
+    // app shows (and its locale-free key), the duration, the day and a small thumbnail. No note,
+    // intensity, refId or path
+    function isValidPost(postId) {
+      let d = incoming();
+      return hasExactly(
+          d,
+          ['authorUid', 'authorName', 'source', 'title', 'dateLocal', 'weekStartLocal', 'createdAt', 'reactions',
+           'schemaVersion'],
+          ['authorPhotoUrl', 'durationSeconds', 'activityType', 'titleKey', 'thumb'])
+        && isUuid(postId)
+        && d.authorName is string && d.authorName.size() >= 1 && d.authorName.size() <= 100
+        && (d.get('authorPhotoUrl', null) == null
+          || (d.authorPhotoUrl is string && d.authorPhotoUrl.size() <= 2048 && d.authorPhotoUrl.matches('^https://.+')))
+        && d.source in ['DAILY', 'GYM', 'PROGRAM', 'ACTIVITY']
+        && d.title is string && d.title.size() <= 500
+        && (d.get('durationSeconds', null) == null || isIntIn(d.durationSeconds, 0, 2147483647))
+        && (d.get('activityType', null) == null
+          || (d.source == 'ACTIVITY' && d.activityType in [
+            'OWN_GYM_ROUTINE', 'RUNNING', 'WALKING', 'CYCLING', 'SWIMMING', 'YOGA', 'PILATES', 'DANCE',
+            'TEAM_SPORT', 'RACKET_SPORT', 'MARTIAL_ARTS', 'HIIT', 'STRETCHING', 'OTHER']))
+        && isPostTitleKey(d)
+        && isMonday(d.weekStartLocal)
+        && isLocalDate(d.dateLocal)
+        && isDateInWeek(d.dateLocal, d.weekStartLocal)
+        && d.createdAt is timestamp
+        && d.reactions is map
+        && isPostThumb(d)
+        && d.schemaVersion == 1;
+    }
+
+    function isPostCreate(groupId, postId) {
+      let d = incoming();
+      return isFeedMember(groupId)
+        && isValidPost(postId)
+        && d.authorUid == request.auth.uid
+        && d.createdAt == request.time
+        && d.reactions.size() == 0;
+    }
+
+    // The author sets, replaces or removes the thumbnail, and nothing else
+    function isThumbUpdate() {
+      return resource.data.authorUid == request.auth.uid
+        && changedOnly(['thumb'])
+        && isPostThumb(incoming());
+    }
+
+    // Any member adds, changes or removes their own reaction (one per member), and nothing else
+    function isReactionUpdate() {
+      let after = incoming().reactions;
+      return changedOnly(['reactions'])
+        && after is map
+        && after.diff(resource.data.reactions).affectedKeys().hasOnly([request.auth.uid])
+        && (!(request.auth.uid in after) || after[request.auth.uid] in ['strong', 'fire', 'clap', 'raised']);
+    }
+
+    // The author (also after leaving or being removed), the group's owner (before the group is
+    // deleted: get() reads it as it was before the batch), or any member once the post expired.
+    // Deleting a post that doesn't exist is a no-op a member may send (an entry deleted in the app
+    // deletes its post in every group without knowing where it was posted)
+    function isPostDelete(groupId) {
+      return (resource == null && isMemberOf(groupId))
+        || isSignedInAs(resource.data.authorUid)
+        || (isSignedIn() && get(groupPath(groupId)).data.ownerUid == request.auth.uid)
+        || (isMemberOf(groupId) && request.time > postExpiry());
+    }
+
+    // ---------- users/{uid}/groups/{groupId} and users/{uid}/meta/groups ----------
+
+    // The membership index (the groups a person is in, for their app) and its counter. Every
+    // index change moves groupCount by exactly 1 and names the group in lastGroupId, so the
+    // counter always equals the number of index entries and can enforce the limit of 5 groups
+
+    function groupCountBefore(uid) {
+      return exists(groupCounterPath(uid)) ? get(groupCounterPath(uid)).data.groupCount : 0;
+    }
+
+    function isValidMembership(groupId) {
+      let d = incoming();
+      return hasExactly(d, ['groupId', 'joinedAt', 'schemaVersion'], [])
+        && d.groupId == groupId
+        && isGroupId(groupId)
+        && d.joinedAt == request.time
+        && d.schemaVersion == 1;
+    }
+
+    function isMembershipCreate(uid, groupId) {
+      let counter = getAfter(groupCounterPath(uid)).data;
+      return isSignedInAs(uid)
+        && isValidMembership(groupId)
+        && existsAfter(memberPath(groupId, uid))
+        && counter.groupCount == groupCountBefore(uid) + 1
+        && counter.groupCount <= 5
+        && counter.lastGroupId == groupId;
+    }
+
+    // Leaving, or reconciling an entry whose group is gone or no longer lists the person
+    function isMembershipDelete(uid, groupId) {
+      let counter = getAfter(groupCounterPath(uid)).data;
+      return isSignedInAs(uid)
+        && !existsAfter(memberPath(groupId, uid))
+        && counter.groupCount == groupCountBefore(uid) - 1
+        && counter.lastGroupId == groupId;
+    }
+
+    function isValidGroupCounter() {
+      let d = incoming();
+      return hasExactly(d, ['groupCount', 'lastGroupId', 'updatedAt', 'schemaVersion'], [])
+        && isIntIn(d.groupCount, 0, 5)
+        && isGroupId(d.lastGroupId)
+        && d.updatedAt == request.time
+        && d.schemaVersion == 1;
+    }
+
+    // + 1 with a new index entry for lastGroupId, or - 1 with that entry deleted
+    function isGroupCounterStep(uid, before) {
+      let d = incoming();
+      return isSignedInAs(uid)
+        && isValidGroupCounter()
+        && ((d.groupCount == before + 1
+            && !exists(membershipPath(uid, d.lastGroupId))
+            && existsAfter(membershipPath(uid, d.lastGroupId)))
+          || (d.groupCount == before - 1
+            && exists(membershipPath(uid, d.lastGroupId))
+            && !existsAfter(membershipPath(uid, d.lastGroupId))));
+    }
+
+    // ---------- Paths ----------
+    // Anything not matched below is denied.
+
+    match /users/{uid} {
+      allow read, delete: if isOwner(uid);
+      allow create: if isOwner(uid) && isValidUser() && incoming().createdAt == request.time;
+      allow update: if isOwner(uid) && isValidUser() && incoming().createdAt == resource.data.createdAt;
+
+      match /trainingLog/{entryId} {
+        allow read, delete: if isOwner(uid);
+        allow create: if isOwner(uid)
+          && canCreate(isValidTrainingEntry(entryId), isTombstone('entryId', entryId));
+        allow update: if isOwner(uid)
+          && canUpdateRandomId(isValidTrainingEntry(entryId), isTombstone('entryId', entryId));
+      }
+
+      match /weeklyGoals/{week} {
+        allow read, delete: if isOwner(uid);
+        allow create: if isOwner(uid)
+          && canCreate(isValidWeeklyGoal(week), isTombstone('effectiveFromWeek', week));
+        allow update: if isOwner(uid)
+          && canUpdateNaturalId(isValidWeeklyGoal(week), isTombstone('effectiveFromWeek', week));
+      }
+
+      match /programs/{programId} {
+        allow read, delete: if isOwner(uid);
+        allow create: if isOwner(uid)
+          && canCreate(isValidProgram(programId), isTombstone('programId', programId));
+        allow update: if isOwner(uid)
+          && canUpdateRandomId(isValidProgram(programId), isTombstone('programId', programId));
+
+        match /workouts/{workoutId} {
+          allow read, delete: if isOwner(uid);
+          allow create: if isOwner(uid)
+            && canCreate(isValidProgramWorkout(workoutId), isTombstone('workoutId', workoutId));
+          allow update: if isOwner(uid)
+            && canUpdateNaturalId(isValidProgramWorkout(workoutId), isTombstone('workoutId', workoutId));
+        }
+
+        match /completions/{workoutId} {
+          allow read, delete: if isOwner(uid);
+          allow create: if isOwner(uid)
+            && canCreate(isValidProgramCompletion(workoutId), isTombstone('workoutId', workoutId));
+          allow update: if isOwner(uid)
+            && canUpdateNaturalId(isValidProgramCompletion(workoutId), isTombstone('workoutId', workoutId));
+        }
+      }
+
+      match /dailyProgress/{docId} {
+        allow read, delete: if isOwner(uid);
+        allow create, update: if isOwner(uid) && docId == 'state' && isValidDailyProgress();
+      }
+
+      // Membership index and its counter (Groups)
+      match /groups/{groupId} {
+        allow read: if isSignedInAs(uid);
+        allow create: if isMembershipCreate(uid, groupId);
+        allow delete: if isMembershipDelete(uid, groupId);
+      }
+
+      match /meta/groups {
+        allow read: if isSignedInAs(uid);
+        allow create: if isGroupCounterStep(uid, 0);
+        allow update: if isGroupCounterStep(uid, resource.data.groupCount);
+        // Only when the person is in no group (Delete account, after leaving every group)
+        allow delete: if isSignedInAs(uid) && resource.data.groupCount == 0;
+      }
+    }
+
+    // ---------- Groups ----------
+
+    match /groups/{groupId} {
+      // Only members read a group (single gets: the app knows its groups from its index)
+      allow get: if isMemberOf(groupId);
+      allow create: if isSignedIn() && isGroupCreate(groupId);
+      allow update: if isSignedIn() && isValidGroup()
+        && (isJoin(groupId) || isLeave(groupId) || isRemoveMember(groupId) || isTransfer(groupId)
+          || isRename() || isRegenerateCode(groupId));
+      allow delete: if isSignedIn() && isGroupDelete(groupId);
+
+      match /members/{memberUid} {
+        // Members read every member of an existing group; anyone signed in reads their own
+        // document (to reconcile their index: "not found" means they are no longer a member)
+        allow read: if isSignedInAs(memberUid) || (isMemberOf(groupId) && exists(groupPath(groupId)));
+        allow create: if isMemberCreate(groupId, memberUid);
+        // Only their own summary, while the group exists; joinedAt and inviteCode never change
+        allow update: if isSignedInAs(memberUid)
+          && isValidMember()
+          && incoming().joinedAt == resource.data.joinedAt
+          && incoming().inviteCode == resource.data.inviteCode
+          && exists(groupPath(groupId));
+        allow delete: if isMemberDelete(groupId, memberUid);
+      }
+
+      // Feed: one post per counted workout and group, postId = the training entry's uuid
+      match /posts/{postId} {
+        allow read: if isFeedMember(groupId);
+        allow create: if isPostCreate(groupId, postId);
+        allow update: if isFeedMember(groupId) && (isThumbUpdate() || isReactionUpdate());
+        allow delete: if isPostDelete(groupId);
+      }
+    }
+
+    // Anyone signed in can look up one exact code; nobody can list codes
+    match /inviteCodes/{code} {
+      allow get: if isSignedIn();
+      allow create: if isInviteCreate(code);
+      allow update: if isInviteRename(code);
+      allow delete: if isInviteDelete(code);
+    }
+  }
+}

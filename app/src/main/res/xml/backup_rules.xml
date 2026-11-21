@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Auto backup rules for Android 11 and lower (API 31+ uses data_extraction_rules.xml).
+   See https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <!-- Training photos stay on this device: never part of a backup -->
+    <exclude
+        domain="file"
+        path="training_photos/" />
+    <!-- Downloaded content is a cache of Firebase Hosting: downloaded again when needed -->
+    <exclude
+        domain="file"
+        path="content/" />
+</full-backup-content>

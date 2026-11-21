@@ -1,0 +1,65 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration file (sdk path, etc.)
+local.properties
+
+# Android / build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+proguard/
+.cxx/
+.externalNativeBuild/
+
+# Android Studio / IntelliJ
+# Ignore the whole .idea directory EXCEPT shared configs that should be committed.
+.idea/*
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+!.idea/runConfigurations/
+!.idea/scopes/
+*.iml
+
+# Captures (Android Studio "Capture" sessions)
+captures/
+
+# Log files
+*.log
+
+# Keystore / signing
+*.jks
+*.keystore
+
+# Google Services: app/google-services.json is committed (not a secret, CI needs it to build).
+# Its API key must be restricted in Google Cloud Console before a public release (CLAUDE.md).
+# Ignore stray downloads such as "google-services (1).json".
+google-services (*).json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.coda/tmp/
+.coda/config.json
+
+# Content publishing (see content/README.md)
+# manifest.json is generated in CI by scripts/build_manifest.py before each deploy
+content/*/manifest.json
+# Firebase Hosting public folder, filled by scripts/stage_hosting.py
+hosting/public/
+.firebase/
+
+# Firestore rules tests (firebase/rules-tests) and the emulators
+node_modules/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+database-debug.log*
+pubsub-debug.log*

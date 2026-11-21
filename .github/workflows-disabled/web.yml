@@ -1,0 +1,75 @@
+# The Flutter web app (web/): analyze, test and build, on Flutter 3.47.7 (pinned; see CLAUDE.md
+# "Web"). The shared fixtures (shared/fixtures/) must match their source. `flutter test` includes
+# the Kotlin ↔ Dart parity tests (test/parity/) against shared/golden/ and content/v1. Never deploys: the
+# Hosting deploy (content-deploy.yml) reuses this gate on main.
+name: Web
+
+on:
+  pull_request:
+    paths:
+      - "web/**"
+      - "shared/**"
+      - "shared/golden/**"
+      - "content/**"
+      - "firebase.json"
+      - "scripts/stage_hosting.py"
+      - ".github/workflows/web.yml"
+  push:
+    # main runs this same gate in content-deploy.yml before deploying
+    branches-ignore:
+      - main
+    paths:
+      - "web/**"
+      - "shared/**"
+      - "shared/golden/**"
+      - "content/**"
+      - "firebase.json"
+      - "scripts/stage_hosting.py"
+      - ".github/workflows/web.yml"
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  web:
+    name: Analyze, test and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Shared fixtures are up to date
+        working-directory: .
+        run: node scripts/export_fixtures.mjs --check
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.47.7"
+          channel: stable
+          cache: true
+
+      - name: Flutter version
+        run: flutter --version
+
+      - name: Dependencies (exactly the lockfile)
+        run: flutter pub get --enforce-lockfile
+
+      - name: Analyze (no issues allowed)
+        run: flutter analyze --fatal-infos --fatal-warnings
+
+      - name: Format
+        run: dart format --line-length 120 --output=none --set-exit-if-changed lib test
+
+      - name: Tests
+        run: flutter test
+
+      - name: Build
+        run: flutter build web --release --no-wasm-dry-run

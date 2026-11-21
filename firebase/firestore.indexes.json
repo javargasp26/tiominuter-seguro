@@ -1,0 +1,16 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "posts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "weekStartLocal", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    { "collectionGroup": "posts", "fieldPath": "thumb", "indexes": [] },
+    { "collectionGroup": "posts", "fieldPath": "reactions", "indexes": [] }
+  ]
+}

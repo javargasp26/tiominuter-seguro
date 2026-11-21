@@ -1,0 +1,3603 @@
+{
+  "splits": [
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 2,
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_B"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 3,
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_B"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_C"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 4,
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_B"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_B"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 5,
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "PUSH"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "PULL"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LEGS"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_A"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 2,
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_B"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 3,
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_A"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_B"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 4,
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_A"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_B"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_C"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 5,
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_A"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_B"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_C"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 2,
+      "focus": "LOWER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_LOWER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_LOWER_B"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 3,
+      "focus": "LOWER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_GLUTE"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_QUAD"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 4,
+      "focus": "LOWER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_GLUTE"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_QUAD"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_LOWER"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 5,
+      "focus": "LOWER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_GLUTE"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_QUAD"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_B"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_POSTERIOR"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 2,
+      "focus": "LOWER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_LOWER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_LOWER_B"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 3,
+      "focus": "LOWER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_LOWER_A"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_LOWER_B"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 4,
+      "focus": "LOWER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_GLUTE"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_QUAD"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 5,
+      "focus": "LOWER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_GLUTE"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_QUAD"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 2,
+      "focus": "UPPER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_UPPER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_UPPER_B"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 3,
+      "focus": "UPPER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_FOCUS_B"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 4,
+      "focus": "UPPER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_FOCUS_B"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_UPPER"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 5,
+      "focus": "UPPER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_FOCUS_B"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER_B"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_FOCUS_C"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 2,
+      "focus": "UPPER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_UPPER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_UPPER_B"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 3,
+      "focus": "UPPER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_UPPER_A"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "FULL_BODY_UPPER_B"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 4,
+      "focus": "UPPER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_A"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_FOCUS_B"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 5,
+      "focus": "UPPER_BODY",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_A"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "LOWER"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "UPPER_FOCUS_B"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 2,
+      "focus": "CORE",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_B"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 3,
+      "focus": "CORE",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_B"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_C"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 4,
+      "focus": "CORE",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_UPPER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_LOWER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_UPPER_B"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_LOWER_B"
+        }
+      ]
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "daysPerWeek": 5,
+      "focus": "CORE",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_PUSH"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_PULL"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_LEGS"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_UPPER_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_LOWER_A"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 2,
+      "focus": "CORE",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_A"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_B"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 3,
+      "focus": "CORE",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_A"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_B"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 4,
+      "focus": "CORE",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_A"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_B"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_C"
+        }
+      ]
+    },
+    {
+      "goal": "LOSE_FAT",
+      "daysPerWeek": 5,
+      "focus": "CORE",
+      "days": [
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_A"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_B"
+        },
+        {
+          "kind": "CARDIO"
+        },
+        {
+          "kind": "STRENGTH",
+          "strengthDayId": "CORE_FULL_BODY_C"
+        }
+      ]
+    }
+  ],
+  "strengthDays": [
+    {
+      "id": "FULL_BODY_A",
+      "title": "FULL_BODY_A",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            55,
+            113,
+            2
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            116,
+            65,
+            3
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            68,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            8
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME"
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            86,
+            47,
+            111
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            52,
+            54,
+            98
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FULL_BODY_B",
+      "title": "FULL_BODY_B",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            112,
+            20
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            66,
+            109,
+            3
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            69,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            8
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119,
+            6,
+            7
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            16,
+            30,
+            108
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            61,
+            62,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FULL_BODY_C",
+      "title": "FULL_BODY_C",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            97,
+            95,
+            2
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            83,
+            65,
+            110,
+            3
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            74,
+            18,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            24,
+            31,
+            8
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME"
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            47,
+            86,
+            111
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            79,
+            98,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UPPER_A",
+      "title": "UPPER_A",
+      "slots": [
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            116,
+            65,
+            3
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            68,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            86,
+            47,
+            111
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            69,
+            15,
+            107,
+            70
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            32,
+            118,
+            76
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            52,
+            54,
+            98
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            61,
+            62,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UPPER_B",
+      "title": "UPPER_B",
+      "slots": [
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            83,
+            66,
+            110,
+            109
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            18,
+            74,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            87,
+            47,
+            86,
+            111
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            16,
+            30,
+            108
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            63,
+            84,
+            3,
+            110
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            79,
+            98,
+            54
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME"
+        }
+      ]
+    },
+    {
+      "id": "LOWER_A",
+      "title": "LOWER_A",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            55,
+            113,
+            2
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            8
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            112,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            20
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME"
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            7,
+            6,
+            119
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            106,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LOWER_B",
+      "title": "LOWER_B",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            97,
+            95,
+            112,
+            2
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            20,
+            114
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            24,
+            31,
+            49,
+            8
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            113,
+            20,
+            2
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME"
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119,
+            9,
+            11
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            106,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PUSH",
+      "title": "PUSH",
+      "slots": [
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            116,
+            65,
+            3
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            86,
+            47,
+            111
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            83,
+            66,
+            109
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            63,
+            84,
+            110
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            16,
+            30
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            32,
+            118,
+            76
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            61,
+            17,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PULL",
+      "title": "PULL",
+      "slots": [
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            18,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            69,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            78,
+            108,
+            106
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            52,
+            54,
+            98
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            78,
+            16,
+            30
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            79,
+            98,
+            54
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            77,
+            106,
+            108
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LEGS",
+      "title": "LEGS",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            55,
+            113,
+            2
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            8
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            112,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            20
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME"
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            106
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            7,
+            6,
+            119
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LOWER_GLUTE",
+      "title": "LOWER_A",
+      "slots": [
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            8
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            123
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            112,
+            114,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            125,
+            126
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            121,
+            113,
+            2
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            127,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            124,
+            126,
+            106
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME"
+        }
+      ]
+    },
+    {
+      "id": "LOWER_QUAD",
+      "title": "LOWER_B",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            55,
+            113,
+            2
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            20,
+            122,
+            127
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            97,
+            95
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            24,
+            31,
+            8
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            114,
+            122,
+            121
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            115
+          ],
+          "type": "TIME"
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            126,
+            125
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME"
+        }
+      ]
+    },
+    {
+      "id": "LOWER_POSTERIOR",
+      "title": "LOWER_C",
+      "slots": [
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            123
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            97,
+            95,
+            121
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            8
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            112,
+            122,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            124,
+            125
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            127,
+            20,
+            2
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            126,
+            125,
+            106
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME"
+        }
+      ]
+    },
+    {
+      "id": "FULL_BODY_LOWER_A",
+      "title": "FULL_BODY_A",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            55,
+            113,
+            121
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            8
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            116,
+            65,
+            3
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            123
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            68,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            112,
+            114,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            125,
+            126
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            86,
+            47,
+            111
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME"
+        }
+      ]
+    },
+    {
+      "id": "FULL_BODY_LOWER_B",
+      "title": "FULL_BODY_B",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            121,
+            2
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            24,
+            31,
+            8
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            66,
+            109,
+            3
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            20,
+            122,
+            127
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            69,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            123
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            124,
+            126
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            16,
+            30,
+            108
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119,
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FULL_BODY_LOWER",
+      "title": "FULL_BODY",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            97,
+            95,
+            2
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            123
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            74,
+            18,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            8
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            83,
+            65,
+            110,
+            3
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            127,
+            122,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            125,
+            126
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            47,
+            86,
+            111
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME"
+        }
+      ]
+    },
+    {
+      "id": "UPPER",
+      "title": "UPPER",
+      "slots": [
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            116,
+            65,
+            3
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            68,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            86,
+            47,
+            111
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            69,
+            15,
+            107,
+            70
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            32,
+            118,
+            76
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            52,
+            54,
+            98
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            61,
+            62,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UPPER_FOCUS_B",
+      "title": "UPPER_B",
+      "slots": [
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            83,
+            66,
+            110,
+            109
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            18,
+            74,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            87,
+            47,
+            86,
+            111
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            16,
+            30,
+            108
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            63,
+            84,
+            3,
+            110
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            79,
+            98,
+            54
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            78,
+            77,
+            108
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME"
+        }
+      ]
+    },
+    {
+      "id": "UPPER_FOCUS_C",
+      "title": "UPPER_C",
+      "slots": [
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            68,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            116,
+            65,
+            3
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            86,
+            47,
+            111
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            69,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            32,
+            118,
+            76
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            61,
+            62,
+            19
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            81,
+            52,
+            54
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            78,
+            30,
+            108
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME"
+        }
+      ]
+    },
+    {
+      "id": "FULL_BODY_UPPER_A",
+      "title": "FULL_BODY_A",
+      "slots": [
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            116,
+            65,
+            3
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            68,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            55,
+            113,
+            2
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            86,
+            47,
+            111
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            8
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            69,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            52,
+            54,
+            98
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            20
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME"
+        }
+      ]
+    },
+    {
+      "id": "FULL_BODY_UPPER_B",
+      "title": "FULL_BODY_B",
+      "slots": [
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            66,
+            109,
+            3
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            18,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            112,
+            20
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            16,
+            30,
+            108
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            8
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            61,
+            62,
+            17
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            32,
+            118,
+            76
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            24,
+            31,
+            8
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119,
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FULL_BODY_UPPER",
+      "title": "FULL_BODY",
+      "slots": [
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            74,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            83,
+            65,
+            110
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            97,
+            95,
+            2
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            47,
+            86,
+            111
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            8
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            79,
+            98,
+            54
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            63,
+            84,
+            110,
+            3
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            20
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME"
+        }
+      ]
+    },
+    {
+      "id": "LOWER",
+      "title": "LOWER",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            55,
+            113,
+            2
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            8
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            112,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            20
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME"
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            7,
+            6,
+            119
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            106,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CORE_FULL_BODY_A",
+      "title": "FULL_BODY_A",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            55,
+            113,
+            2
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            116,
+            65,
+            3
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            68,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            8
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            86,
+            47,
+            111
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            52,
+            54,
+            98
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME",
+          "required": true
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "CORE_FULL_BODY_B",
+      "title": "FULL_BODY_B",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            112,
+            20
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            66,
+            109,
+            3
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            69,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            8
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            16,
+            30,
+            108
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            61,
+            62,
+            17
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME",
+          "required": true
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "CORE_FULL_BODY_C",
+      "title": "FULL_BODY_C",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            97,
+            95,
+            2
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            83,
+            65,
+            110,
+            3
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            74,
+            18,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            24,
+            31,
+            8
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            47,
+            86,
+            111
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            79,
+            98,
+            54
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME",
+          "required": true
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "CORE_UPPER_A",
+      "title": "UPPER_A",
+      "slots": [
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            116,
+            65,
+            3
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            68,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            86,
+            47,
+            111
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            69,
+            15,
+            107,
+            70
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            32,
+            118,
+            76
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            52,
+            54,
+            98
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            61,
+            62,
+            17
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME",
+          "required": true
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "CORE_UPPER_B",
+      "title": "UPPER_B",
+      "slots": [
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            83,
+            66,
+            110,
+            109
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            18,
+            74,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            87,
+            47,
+            86,
+            111
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            16,
+            30,
+            108
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            63,
+            84,
+            3,
+            110
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            79,
+            98,
+            54
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME",
+          "required": true
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "CORE_LOWER_A",
+      "title": "LOWER_A",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            55,
+            113,
+            2
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            8
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            112,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            106,
+            8
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME",
+          "required": true
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "CORE_LOWER_B",
+      "title": "LOWER_B",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            97,
+            95,
+            112,
+            2
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            20,
+            114
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            24,
+            31,
+            49,
+            8
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            113,
+            20,
+            2
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            106,
+            8
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME",
+          "required": true
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "CORE_PUSH",
+      "title": "PUSH",
+      "slots": [
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            116,
+            65,
+            3
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            86,
+            47,
+            111
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            83,
+            66,
+            109
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            63,
+            84,
+            110
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            16,
+            30
+          ]
+        },
+        {
+          "muscle": "CHEST",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            32,
+            118,
+            76
+          ]
+        },
+        {
+          "muscle": "TRICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            61,
+            17,
+            62
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME",
+          "required": true
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "CORE_PULL",
+      "title": "PULL",
+      "slots": [
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            18,
+            70,
+            107
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            69,
+            15,
+            107
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            78,
+            108,
+            106
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            52,
+            54,
+            98
+          ]
+        },
+        {
+          "muscle": "SHOULDERS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            78,
+            16,
+            30
+          ]
+        },
+        {
+          "muscle": "BICEPS",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            79,
+            98,
+            54
+          ]
+        },
+        {
+          "muscle": "BACK",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            77,
+            106,
+            108
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME",
+          "required": true
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "CORE_LEGS",
+      "title": "LEGS",
+      "slots": [
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            55,
+            113,
+            2
+          ]
+        },
+        {
+          "muscle": "HAMSTRINGS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            117,
+            29,
+            8
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            119
+          ]
+        },
+        {
+          "muscle": "QUADS",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            92,
+            112,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "COMPOUND",
+          "candidates": [
+            93,
+            114,
+            20
+          ]
+        },
+        {
+          "muscle": "GLUTES",
+          "mechanic": "ISOLATION",
+          "candidates": [
+            57,
+            106
+          ]
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            4,
+            120
+          ],
+          "type": "TIME",
+          "required": true
+        },
+        {
+          "muscle": "CORE",
+          "mechanic": "CORE",
+          "candidates": [
+            120,
+            4
+          ],
+          "type": "TIME",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "prescriptions": [
+    {
+      "goal": "GAIN_MUSCLE",
+      "level": "BEGINNER",
+      "exercisesPerSession": {
+        "min": 4,
+        "max": 5
+      },
+      "setsCompound": 3,
+      "setsIsolation": 3,
+      "repsCompound": {
+        "min": 6,
+        "max": 10
+      },
+      "repsIsolation": {
+        "min": 8,
+        "max": 12
+      },
+      "restCompoundSeconds": 90,
+      "restIsolationSeconds": 60,
+      "holdSeconds": 30
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "level": "INTERMEDIATE",
+      "exercisesPerSession": {
+        "min": 5,
+        "max": 6
+      },
+      "setsCompound": 4,
+      "setsIsolation": 3,
+      "repsCompound": {
+        "min": 6,
+        "max": 10
+      },
+      "repsIsolation": {
+        "min": 8,
+        "max": 12
+      },
+      "restCompoundSeconds": 90,
+      "restIsolationSeconds": 60,
+      "holdSeconds": 40
+    },
+    {
+      "goal": "GAIN_MUSCLE",
+      "level": "ADVANCED",
+      "exercisesPerSession": {
+        "min": 6,
+        "max": 7
+      },
+      "setsCompound": 4,
+      "setsIsolation": 4,
+      "repsCompound": {
+        "min": 6,
+        "max": 10
+      },
+      "repsIsolation": {
+        "min": 8,
+        "max": 12
+      },
+      "restCompoundSeconds": 120,
+      "restIsolationSeconds": 60,
+      "holdSeconds": 50
+    },
+    {
+      "goal": "LOSE_FAT",
+      "level": "BEGINNER",
+      "exercisesPerSession": {
+        "min": 4,
+        "max": 5
+      },
+      "setsCompound": 2,
+      "setsIsolation": 2,
+      "repsCompound": {
+        "min": 12,
+        "max": 15
+      },
+      "repsIsolation": {
+        "min": 12,
+        "max": 15
+      },
+      "restCompoundSeconds": 45,
+      "restIsolationSeconds": 30,
+      "holdSeconds": 30
+    },
+    {
+      "goal": "LOSE_FAT",
+      "level": "INTERMEDIATE",
+      "exercisesPerSession": {
+        "min": 5,
+        "max": 6
+      },
+      "setsCompound": 3,
+      "setsIsolation": 3,
+      "repsCompound": {
+        "min": 12,
+        "max": 15
+      },
+      "repsIsolation": {
+        "min": 12,
+        "max": 15
+      },
+      "restCompoundSeconds": 45,
+      "restIsolationSeconds": 30,
+      "holdSeconds": 40
+    },
+    {
+      "goal": "LOSE_FAT",
+      "level": "ADVANCED",
+      "exercisesPerSession": {
+        "min": 6,
+        "max": 7
+      },
+      "setsCompound": 3,
+      "setsIsolation": 3,
+      "repsCompound": {
+        "min": 12,
+        "max": 15
+      },
+      "repsIsolation": {
+        "min": 12,
+        "max": 15
+      },
+      "restCompoundSeconds": 45,
+      "restIsolationSeconds": 30,
+      "holdSeconds": 50
+    }
+  ],
+  "progression": {
+    "repStepPerWeek": 1,
+    "maxSets": 5,
+    "holdStepSeconds": 5,
+    "deloadEveryWeeks": 4,
+    "deloadMinProgramWeeks": 6,
+    "deloadSetsDrop": 1,
+    "deloadMinSets": 2,
+    "deloadCardioFactor": 0.7
+  },
+  "cardio": {
+    "rotation": [
+      {
+        "location": "GYM",
+        "types": [
+          "TREADMILL"
+        ]
+      },
+      {
+        "location": "HOME",
+        "types": [
+          "OUTDOOR_RUN",
+          "HOME_CIRCUIT"
+        ]
+      }
+    ],
+    "outdoorRun": {
+      "weeklyIncreasePercent": 10,
+      "levels": [
+        {
+          "level": "BEGINNER",
+          "runStartKm": 1.5,
+          "walkStartKm": 2.0
+        },
+        {
+          "level": "INTERMEDIATE",
+          "runStartKm": 3.0,
+          "walkStartKm": 3.0
+        },
+        {
+          "level": "ADVANCED",
+          "runStartKm": 5.0,
+          "walkStartKm": 4.0
+        }
+      ]
+    },
+    "treadmill": [
+      {
+        "level": "BEGINNER",
+        "warmUpSeconds": 300,
+        "coolDownSeconds": 300,
+        "jogSpeedKmh": 7.0,
+        "walkSpeedKmh": 5.0,
+        "jogSeconds": 60,
+        "walkSeconds": 120,
+        "inclines": [
+          1.0,
+          2.0
+        ],
+        "baseIntervals": 4,
+        "intervalsPerWeek": 1,
+        "maxIntervals": 8
+      },
+      {
+        "level": "INTERMEDIATE",
+        "warmUpSeconds": 300,
+        "coolDownSeconds": 300,
+        "jogSpeedKmh": 8.5,
+        "walkSpeedKmh": 5.5,
+        "jogSeconds": 120,
+        "walkSeconds": 90,
+        "inclines": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "baseIntervals": 5,
+        "intervalsPerWeek": 1,
+        "maxIntervals": 10
+      },
+      {
+        "level": "ADVANCED",
+        "warmUpSeconds": 300,
+        "coolDownSeconds": 300,
+        "jogSpeedKmh": 10.0,
+        "walkSpeedKmh": 6.0,
+        "jogSeconds": 180,
+        "walkSeconds": 60,
+        "inclines": [
+          3.0,
+          5.0,
+          6.0,
+          8.0
+        ],
+        "baseIntervals": 6,
+        "intervalsPerWeek": 1,
+        "maxIntervals": 12
+      }
+    ],
+    "treadmillLowImpact": {
+      "warmUpSeconds": 300,
+      "coolDownSeconds": 300,
+      "speedKmh": 5.0,
+      "lowIncline": 2.0,
+      "highIncline": 8.0,
+      "lowSeconds": 120,
+      "highSeconds": 120,
+      "baseIntervals": [
+        {
+          "level": "BEGINNER",
+          "value": 3
+        },
+        {
+          "level": "INTERMEDIATE",
+          "value": 4
+        },
+        {
+          "level": "ADVANCED",
+          "value": 5
+        }
+      ],
+      "intervalsPerWeek": 1,
+      "maxIntervals": 8
+    },
+    "homeCircuit": {
+      "levels": [
+        {
+          "level": "BEGINNER",
+          "rounds": 3,
+          "workSeconds": 30,
+          "restSeconds": 30,
+          "exercises": 5
+        },
+        {
+          "level": "INTERMEDIATE",
+          "rounds": 4,
+          "workSeconds": 40,
+          "restSeconds": 20,
+          "exercises": 6
+        },
+        {
+          "level": "ADVANCED",
+          "rounds": 5,
+          "workSeconds": 45,
+          "restSeconds": 15,
+          "exercises": 6
+        }
+      ],
+      "restBetweenRoundsSeconds": 60,
+      "candidates": [
+        1,
+        2,
+        3,
+        5,
+        12,
+        23,
+        21,
+        119,
+        22,
+        4
+      ],
+      "lowImpactCandidates": [
+        105,
+        2,
+        109,
+        58,
+        119,
+        6,
+        7,
+        4
+      ]
+    }
+  },
+  "impact": {
+    "lowImpactMinBmi": 30.0,
+    "lowImpactMinAge": 60,
+    "seniorMinAge": 60,
+    "seniorExtraRestSeconds": 15,
+    "excludedForBeginnerOrLowImpact": [
+      87
+    ]
+  }
+}

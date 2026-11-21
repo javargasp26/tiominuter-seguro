@@ -1,0 +1,751 @@
+<resources>
+    <string name="app_name">Tio Minuter</string>
+    <string name="home_screen_title">Tío Minuter</string>
+    <string name="start_routine">Start Today\'s Quick Routine</string>
+    <string name="workout_complete">Workout Complete!</string>
+    <string name="next_exercise">Next Exercise</string>
+    <string name="finish">Finish</string>
+    <string name="rest">Rest</string>
+    <string name="reps_label">Reps</string>
+    <string name="routine_screen_title">Routine Day</string>
+    <string name="day">Day %1$d</string>
+    <string name="exercise">Exercise %1$d</string>
+    <string name="current_exercise">Current Exercise: %1$s</string>
+    <string name="skip">Skip</string>
+    <string name="seconds">seconds</string>
+    <string name="reps">reps</string>
+    <string name="timer_format">%02d:%02d</string>
+    <string name="loading">Loading…</string>
+    <string name="home_screen_tagline">No excuses — just 10 minutes a day.</string>
+    <string name="start_today_routine">Start Today\'s Routine</string>
+    
+    <!-- Workout screen strings -->
+    <string name="workout">Workout</string>
+    <string name="back">Back</string>
+    <string name="great_job">Great job!</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="exercise_progress">Exercise %1$d of %2$d</string>
+    <string name="skip_exercise">Skip Exercise</string>
+    <string name="reps_target">%1$d reps</string>
+    <string name="reps_completed">%1$d reps completed</string>
+    <string name="complete_reps">Complete Reps</string>
+    <string name="duration_seconds">%1$d seconds</string>
+    <string name="time_up">Time\'s up!</string>
+    <string name="timer_running">Timer running…</string>
+    <string name="complete_exercise">Complete Exercise</string>
+    
+    <!-- Routine selection strings -->
+    <string name="select_routine">Select Routine</string>
+    <string name="no_routines_available">No routines available</string>
+    <string name="exercises_count">%1$d exercises</string>
+
+    <string name="time_s_up_moving_on">Time\'s up! Moving on.</string>
+    <string name="go_to_max">Go to max!</string>
+    <string name="gym_routines">Gym Routines</string>
+    <string name="day_routines">Day %1$s Routines</string>
+    <string name="weekly_routines">Week %1$s Routines</string>
+    <string name="start_gym_routine">Start Routine %1$s</string>
+    <string name="routine">Routine\n</string>
+    <string name="reps_format"> reps</string>
+    <string name="seconds_format"> sec</string>
+    <string name="preview_routine">Preview routine</string>
+    <string name="preview_set">Preview Set %1$d</string>
+    <string name="start_set">Start Set %1$d</string>
+    <string name="basket_trainning">Basket Training</string>
+    <string name="full_body_trainning">Full Body Gym Training</string>
+    <string name="full_body_routines">Full Body Routines</string>
+    <string name="basket_routines">Basket Routines</string>
+    <string name="set">Set: %1$d</string>
+    <string name="reps_gym">Reps: %1$s</string>
+
+    <!-- Pull workout -->
+    <string name="pull_workout">Pull Workout</string>
+
+    <!-- Push workout -->
+    <string name="push_workout">Push Workout</string>
+
+    <!-- Legs workout -->
+    <string name="leg_workout">Leg Workout</string>
+
+    <string name="error">⚠️ Error</string>
+    <string name="retry">Retry</string>
+    <string name="go_to_gym">Go to the GYM</string>
+    <string name="week">Week %1$d</string>
+    <string name="set_completed">Set %1$d of %2$d completed</string>
+    <string name="set_x_of_y" formatted="true">Set %1$d of %2$d</string>
+
+    <!-- Gym routines entry point -->
+    <string name="gym_routines_button">Gym routines</string>
+
+    <!-- Gym Routine Selection screen -->
+    <string name="see_routine">See routine</string>
+    <string name="gym_start_routine">Start routine</string>
+    <string name="unknown_exercise">Unknown exercise</string>
+    <string name="gym_empty_catalog">No gym routines available</string>
+    <string name="gym_refresh_failed">Could not refresh. Check your connection and try again.</string>
+    <string name="gym_refresh_error_snackbar">Refresh failed. Showing saved routines.</string>
+    <!-- Gym exercise summary (shared: selection + routine screens) -->
+    <string name="gym_summary" formatted="true">%1$s · %2$s</string>
+    <string name="gym_summary_sets">Sets: %1$d</string>
+    <string name="gym_summary_reps">Reps: %1$s</string>
+    <string name="gym_summary_time">Time: %1$s</string>
+    <string name="gym_summary_seconds">%1$ds</string>
+
+    <!-- Gym accessibility -->
+    <string name="gym_state_expanded">Expanded</string>
+    <string name="gym_state_collapsed">Collapsed</string>
+    <string name="gym_show_exercises">Show exercises</string>
+    <string name="gym_hide_exercises">Hide exercises</string>
+    <string name="gym_state_completed">Completed</string>
+    <string name="gym_state_not_completed">Not completed</string>
+
+    <!-- Workout screen -->
+    <string name="get_ready">Get Ready</string>
+    <string name="get_ready_banner">GET READY</string>
+    <string name="prepare_yourself">Prepare yourself!</string>
+    <string name="exercise_animation_description" formatted="true">%1$s animation</string>
+
+    <!-- Gym Routine screen -->
+    <string name="gym_routine_reset_progress">Reset progress?</string>
+    <plurals name="gym_routine_completed_count">
+        <item quantity="one">%1$d of %2$d exercise completed</item>
+        <item quantity="other">%1$d of %2$d exercises completed</item>
+    </plurals>
+    <string name="gym_routine_empty">This routine has no exercises yet.</string>
+    <string name="gym_routine_reset_confirmation">All completion marks of this routine will be cleared. This cannot be undone.</string>
+    <string name="gym_routine_reset">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="gym_routine_completed_title">Routine completed!</string>
+    <string name="gym_routine_completed_message">Great job! You finished every exercise of this routine.</string>
+    <string name="gym_routine_finish">Finish</string>
+    <string name="gym_routine_not_found">Routine not found</string>
+    <string name="gym_routine_loading">Loading routine…</string>
+    <string name="gym_routine_reset_action_description">Reset progress</string>
+
+    <!-- Gym Exercise screen -->
+    <string name="gym_exercise_set_x_of_y" formatted="true">Set %1$d of %2$d</string>
+    <plurals name="gym_exercise_reps">
+        <item quantity="one">%d rep</item>
+        <item quantity="other">%d reps</item>
+    </plurals>
+    <string name="gym_exercise_set_done">Set done</string>
+    <string name="gym_exercise_duration">Duration</string>
+    <string name="gym_exercise_start">Start</string>
+    <string name="gym_exercise_get_ready">Get ready</string>
+    <string name="gym_exercise_rest">Rest</string>
+    <string name="gym_exercise_next_set" formatted="true">Next: set %1$d of %2$d</string>
+    <string name="gym_exercise_skip_rest">Skip rest</string>
+    <string name="gym_exercise_rest_animation_description">Rest animation</string>
+    <string name="gym_exercise_exit_title">Leave exercise?</string>
+    <plurals name="gym_exercise_exit_message">
+        <item quantity="one">Progress: %1$d of %2$d set completed. If you leave now, this progress will not be saved and the exercise will not be marked as completed.</item>
+        <item quantity="other">Progress: %1$d of %2$d sets completed. If you leave now, this progress will not be saved and the exercise will not be marked as completed.</item>
+    </plurals>
+    <string name="gym_exercise_exit_confirm">Leave</string>
+    <string name="gym_exercise_not_found">Exercise not found</string>
+    <string name="gym_exercise_loading">Loading exercise…</string>
+
+    <!-- Program feature -->
+    <string name="program_home_button">Programs</string>
+    <string name="program_back">Back</string>
+    <string name="program_back_to_program">Back to program</string>
+    <string name="program_list_title">My programs</string>
+    <string name="program_list_empty_title">No programs yet</string>
+    <string name="program_list_empty_text">Create a training plan of several weeks based on your age, weight, level and goal. Tap + to start.</string>
+    <string name="program_create_content_description">Create program</string>
+    <string name="program_open_action">open program</string>
+    <string name="program_delete_action">Delete program</string>
+    <string name="program_delete_title">Delete program?</string>
+    <string name="program_delete_text">The program and all its progress will be deleted.</string>
+    <string name="program_delete_confirm">Delete</string>
+    <string name="program_cancel">Cancel</string>
+    <string name="program_close">Close</string>
+    <string name="program_goal_gain_muscle">Gain strength and muscle</string>
+    <string name="program_goal_lose_fat">Lose fat</string>
+    <string name="program_level_beginner">Beginner</string>
+    <string name="program_level_intermediate">Intermediate</string>
+    <string name="program_level_advanced">Advanced</string>
+    <string name="program_location_home">Home</string>
+    <string name="program_location_gym">Gym</string>
+    <string name="program_duration">%1$s · %2$s</string>
+    <string name="program_card_meta">%1$s · %2$s</string>
+    <string name="program_progress">Progress: %1$s %%</string>
+    <string name="program_create_title">New program</string>
+    <string name="program_age_label">Age</string>
+    <string name="program_weight_label">Weight (kg)</string>
+    <string name="program_height_label">Height (cm)</string>
+    <string name="program_error_required">Required</string>
+    <string name="program_error_range">Enter a value from %1$d to %2$d</string>
+    <string name="program_hint_range">From %1$d to %2$d</string>
+    <string name="program_level_label">Level</string>
+    <string name="program_goal_label">Goal</string>
+    <string name="program_location_label">Where you train</string>
+    <string name="program_focus_label">Focus</string>
+    <string name="program_focus_balanced">Balanced</string>
+    <string name="program_focus_balanced_description">The whole body, evenly</string>
+    <string name="program_focus_lower_body">Lower body</string>
+    <string name="program_focus_lower_body_description">More glutes and legs</string>
+    <string name="program_focus_upper_body">Upper body</string>
+    <string name="program_focus_upper_body_description">More chest, back, shoulders and arms</string>
+    <string name="program_focus_core">Core and stability</string>
+    <string name="program_focus_core_description">More core and balance work</string>
+    <string name="program_focus_value">Focus: %1$s</string>
+    <string name="program_weeks_label">Weeks</string>
+    <string name="program_days_label">Days per week</string>
+    <string name="program_decrease">Decrease %1$s</string>
+    <string name="program_increase">Increase %1$s</string>
+    <string name="program_bmi">BMI: %1$s</string>
+    <string name="program_low_impact_note">Your plan uses low-impact exercises: no jumping or running, and walking instead of running.</string>
+    <string name="program_underweight_warning">Your BMI is below 18.5. Consider choosing “Gain strength and muscle” instead of “Lose fat”.</string>
+    <string name="program_disclaimer">This program does not replace advice from a health professional.</string>
+    <string name="program_preview_button">Preview</string>
+    <string name="program_create_button">Create</string>
+    <string name="program_create_failed">The program could not be created. Try again.</string>
+    <string name="program_week_title">Week %1$d</string>
+    <string name="program_unknown_exercise">Unknown exercise</string>
+    <string name="program_title_full_body_a">Full body A</string>
+    <string name="program_title_full_body_b">Full body B</string>
+    <string name="program_title_full_body_c">Full body C</string>
+    <string name="program_title_upper_a">Upper A</string>
+    <string name="program_title_upper_b">Upper B</string>
+    <string name="program_title_lower_a">Lower A</string>
+    <string name="program_title_lower_b">Lower B</string>
+    <string name="program_title_push">Push</string>
+    <string name="program_title_pull">Pull</string>
+    <string name="program_title_legs">Legs</string>
+    <string name="program_title_full_body">Full body</string>
+    <string name="program_title_upper">Upper</string>
+    <string name="program_title_lower">Lower</string>
+    <string name="program_title_upper_c">Upper C</string>
+    <string name="program_title_lower_c">Lower C</string>
+    <string name="program_title_outdoor_run">Outdoor run</string>
+    <string name="program_title_brisk_walk">Brisk walk</string>
+    <string name="program_title_treadmill">Treadmill</string>
+    <string name="program_title_home_circuit">Home circuit</string>
+    <string name="program_week_header">Week %1$d · %2$s %%</string>
+    <string name="program_deload">Deload</string>
+    <string name="program_completed">Completed</string>
+    <string name="program_not_completed">Not completed</string>
+    <string name="program_program_not_found">This program no longer exists.</string>
+    <string name="program_not_found">This workout is no longer available.</string>
+    <string name="program_distance_km">%1$s km</string>
+    <string name="program_treadmill_summary">%1$s · %2$s</string>
+    <string name="program_circuit_summary">%1$s · %2$s</string>
+    <string name="program_reset">Reset</string>
+    <string name="program_reset_title">Reset workout?</string>
+    <string name="program_reset_text">Every exercise will be marked as not done so you can do the workout again. It stays completed in the program.</string>
+    <string name="program_workout_completed_title">Workout completed!</string>
+    <string name="program_workout_completed_text">Great job. Your progress has been saved.</string>
+    <string name="program_summary_sets">Sets</string>
+    <string name="program_summary_reps">Reps</string>
+    <string name="program_summary_time">Time</string>
+    <string name="program_seconds_short">%ds</string>
+    <string name="program_exercise_of">Exercise %1$d of %2$d</string>
+    <string name="program_set_of">Set %1$d of %2$d</string>
+    <string name="program_set_done">Set done</string>
+    <string name="program_start">Start</string>
+    <string name="program_get_ready">Get ready</string>
+    <string name="program_rest">Rest</string>
+    <string name="program_skip_rest">Skip rest</string>
+    <string name="program_next_set">Next: set %1$d</string>
+    <string name="program_hold">Hold the position</string>
+    <string name="program_per_side">per side</string>
+    <string name="program_left_side">Left side</string>
+    <string name="program_right_side">Right side</string>
+    <string name="program_switch_sides">Switch sides</string>
+    <string name="program_per_side_order">Per side: left first, then right</string>
+    <string name="program_exit_exercise_title">Leave exercise?</string>
+    <string name="program_leave">Leave</string>
+    <string name="program_stay">Stay</string>
+    <string name="program_segment_warm_up">Warm-up</string>
+    <string name="program_segment_jog">Jog</string>
+    <string name="program_segment_walk">Walk</string>
+    <string name="program_segment_incline_walk">Incline walk</string>
+    <string name="program_segment_cool_down">Cool-down</string>
+    <string name="program_segment_of">Segment %1$d of %2$d</string>
+    <string name="program_segment_line">%1$s · %2$s km/h · %3$s %%</string>
+    <string name="program_speed">%1$s km/h</string>
+    <string name="program_incline">Incline %1$s %%</string>
+    <string name="program_next">Next: %1$s</string>
+    <string name="program_last_segment">Last segment</string>
+    <string name="program_total_remaining">Total remaining: %1$s</string>
+    <string name="program_pause">Pause</string>
+    <string name="program_resume">Resume</string>
+    <string name="program_skip_segment">Skip segment</string>
+    <string name="program_leave_workout_title">Leave workout?</string>
+    <string name="program_leave_workout_text">This workout will not be marked as completed.</string>
+    <string name="program_run_target">Run %1$s km</string>
+    <string name="program_walk_target">Brisk walk: %1$s km</string>
+    <string name="program_no_gps_note">Only the time is measured; the distance is not tracked.</string>
+    <string name="program_finish">Finish</string>
+    <string name="program_finish_title">Finish workout?</string>
+    <string name="program_finish_text">The workout will be marked as completed.</string>
+    <string name="program_round_of">Round %1$d of %2$d</string>
+    <string name="program_round_rest">Rest between rounds</string>
+    <string name="program_work">Work</string>
+    <string name="program_work_rest_seconds">%1$d s work / %2$d s rest</string>
+    <string name="program_skip">Skip</string>
+    <plurals name="program_weeks">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="program_days_per_week">
+        <item quantity="one">%d day per week</item>
+        <item quantity="other">%d days per week</item>
+    </plurals>
+    <plurals name="program_exercises_count">
+        <item quantity="one">%d exercise</item>
+        <item quantity="other">%d exercises</item>
+    </plurals>
+    <plurals name="program_exercises_completed">
+        <item quantity="one">%1$d of %2$d exercise completed</item>
+        <item quantity="other">%1$d of %2$d exercises completed</item>
+    </plurals>
+    <plurals name="program_exit_sets_text">
+        <item quantity="one">%1$d of %2$d set done. This exercise will not be marked as done.</item>
+        <item quantity="other">%1$d of %2$d sets done. This exercise will not be marked as done.</item>
+    </plurals>
+    <plurals name="program_intervals">
+        <item quantity="one">%d interval</item>
+        <item quantity="other">%d intervals</item>
+    </plurals>
+    <plurals name="program_minutes">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="program_reps">
+        <item quantity="one">%d rep</item>
+        <item quantity="other">%d reps</item>
+    </plurals>
+    <plurals name="program_reps_per_side">
+        <item quantity="one">%d rep per side</item>
+        <item quantity="other">%d reps per side</item>
+    </plurals>
+    <plurals name="program_rounds">
+        <item quantity="one">%d round</item>
+        <item quantity="other">%d rounds</item>
+    </plurals>
+
+    <!-- Training history -->
+    <string name="home_see_history">See history</string>
+    <string name="training_history_title">Training history</string>
+    <string name="training_history_empty">Completed workouts appear here: daily routines, gym routines, program workouts and the activities you log.</string>
+    <string name="training_history_today">Today</string>
+    <string name="training_history_yesterday">Yesterday</string>
+    <string name="training_source_daily">Daily routine</string>
+    <string name="training_source_gym">Gym routine</string>
+    <string name="training_source_program">Program</string>
+    <string name="training_history_entry_subtitle">%1$s · %2$s</string>
+    <plurals name="training_history_duration_minutes">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <string name="training_history_delete_action">Delete entry</string>
+    <string name="training_history_delete_title">Delete this entry?</string>
+    <string name="training_history_delete_message">\"%1$s\" will be removed from the history.</string>
+    <string name="training_history_delete_confirm">Delete</string>
+    <string name="training_history_delete_cancel">Cancel</string>
+
+    <!-- Weekly goal -->
+    <string name="weekly_goal_card_title">This week</string>
+    <string name="weekly_goal_card_no_goal">Set your weekly goal</string>
+    <string name="weekly_goal_card_set_goal">Set goal</string>
+    <string name="weekly_goal_card_open">Open weekly goal</string>
+    <string name="weekly_goal_met">Goal met this week!</string>
+    <plurals name="weekly_goal_streak">
+        <item quantity="one">Streak: %d week</item>
+        <item quantity="other">Streak: %d weeks</item>
+    </plurals>
+    <string name="weekly_day_short_mon">M</string>
+    <string name="weekly_day_short_tue">T</string>
+    <string name="weekly_day_short_wed">W</string>
+    <string name="weekly_day_short_thu">T</string>
+    <string name="weekly_day_short_fri">F</string>
+    <string name="weekly_day_short_sat">S</string>
+    <string name="weekly_day_short_sun">S</string>
+    <string name="weekly_goal_title">Weekly goal</string>
+    <string name="weekly_goal_applies_from_this_week">The change applies from this week; past weeks keep their goal.</string>
+    <string name="weekly_goal_save">Save</string>
+    <string name="weekly_goal_save_failed">The goal could not be saved. Try again.</string>
+    <string name="training_history_week_of">Week of %1$s</string>
+    <string name="training_history_week_goal_met">goal met</string>
+
+    <!-- Weekly goal: workouts per week -->
+    <plurals name="weekly_goal_progress">
+        <item quantity="one">%1$d of %2$d workout</item>
+        <item quantity="other">%1$d of %2$d workouts</item>
+    </plurals>
+    <plurals name="weekly_goal_workouts_left">
+        <item quantity="one">%d workout left to reach your goal</item>
+        <item quantity="other">%d workouts left to reach your goal</item>
+    </plurals>
+    <plurals name="weekly_goal_a11y_day_workouts">
+        <item quantity="one">%1$s %2$d workout</item>
+        <item quantity="other">%1$s %2$d workouts</item>
+    </plurals>
+    <string name="weekly_goal_a11y_no_workouts">No workouts yet this week</string>
+    <plurals name="weekly_goal_a11y_today_workouts">
+        <item quantity="one">Today, %1$s: %2$d workout</item>
+        <item quantity="other">Today, %1$s: %2$d workouts</item>
+    </plurals>
+    <string name="weekly_goal_a11y_today_no_workouts">Today, %1$s: no workouts yet</string>
+    <string name="weekly_goal_question">How many workouts a week do you want to do?</string>
+    <plurals name="weekly_goal_workouts_per_week">
+        <item quantity="one">%d workout per week</item>
+        <item quantity="other">%d workouts per week</item>
+    </plurals>
+    <string name="weekly_goal_fewer">Fewer workouts</string>
+    <string name="weekly_goal_more">More workouts</string>
+    <plurals name="weekly_goal_explanation">
+        <item quantity="one">Any workout of at least %1$d minute counts: daily routines, gym routines, program workouts and the activities you log. Two workouts on the same day count as two.</item>
+        <item quantity="other">Any workout of at least %1$d minutes counts: daily routines, gym routines, program workouts and the activities you log. Two workouts on the same day count as two.</item>
+    </plurals>
+    <plurals name="training_history_week_workouts">
+        <item quantity="one">%d workout</item>
+        <item quantity="other">%d workouts</item>
+    </plurals>
+    <string name="training_history_not_counted">Doesn\'t count toward the goal</string>
+
+    <!-- Log an activity -->
+    <string name="training_source_activity">Activity</string>
+    <string name="activity_type_own_gym_routine">Own gym routine</string>
+    <string name="activity_type_running">Running</string>
+    <string name="activity_type_walking">Walking</string>
+    <string name="activity_type_cycling">Cycling</string>
+    <string name="activity_type_swimming">Swimming</string>
+    <string name="activity_type_yoga">Yoga</string>
+    <string name="activity_type_pilates">Pilates</string>
+    <string name="activity_type_dance">Dance</string>
+    <string name="activity_type_team_sport">Team sport</string>
+    <string name="activity_type_racket_sport">Racket sport</string>
+    <string name="activity_type_martial_arts">Martial arts</string>
+    <string name="activity_type_hiit">HIIT</string>
+    <string name="activity_type_stretching">Stretching</string>
+    <string name="activity_type_other">Other</string>
+    <string name="intensity_easy">Easy</string>
+    <string name="intensity_moderate">Moderate</string>
+    <string name="intensity_hard">Hard</string>
+    <string name="intensity_easy_description">You can talk normally</string>
+    <string name="intensity_moderate_description">You can talk with effort</string>
+    <string name="intensity_hard_description">Hard to talk</string>
+    <string name="log_activity_button">Log activity</string>
+    <string name="log_activity_title_new">Log an activity</string>
+    <string name="log_activity_title_edit">Edit activity</string>
+    <string name="log_activity_type">Activity</string>
+    <string name="log_activity_custom_name">Activity name</string>
+    <string name="log_activity_counter">%1$d/%2$d</string>
+    <string name="log_activity_duration">Duration</string>
+    <plurals name="log_activity_minutes_short">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <string name="log_activity_minutes_field">Minutes</string>
+    <plurals name="log_activity_short_duration_hint">
+        <item quantity="one">It won\'t count toward your weekly goal (minimum %1$d minute)</item>
+        <item quantity="other">It won\'t count toward your weekly goal (minimum %1$d minutes)</item>
+    </plurals>
+    <string name="log_activity_intensity">Intensity</string>
+    <string name="log_activity_intensity_option">%1$s: %2$s</string>
+    <string name="log_activity_when">When</string>
+    <string name="log_activity_time">Time: %1$s</string>
+    <string name="log_activity_time_change">Time: %1$s. Change the time</string>
+    <string name="log_activity_time_ok">OK</string>
+    <string name="log_activity_cancel">Cancel</string>
+    <string name="log_activity_note">Note (optional)</string>
+    <string name="log_activity_save">Save</string>
+    <string name="log_activity_delete">Delete activity</string>
+    <string name="log_activity_delete_title">Delete this activity?</string>
+    <string name="log_activity_delete_message">It will be removed from the history and the weekly goal.</string>
+    <string name="log_activity_delete_confirm">Delete</string>
+    <string name="log_activity_discard_title">Discard changes?</string>
+    <string name="log_activity_discard_message">The changes you made will be lost.</string>
+    <string name="log_activity_discard_confirm">Discard</string>
+    <string name="log_activity_keep_editing">Keep editing</string>
+    <string name="log_activity_error_type">Choose an activity</string>
+    <string name="log_activity_error_name">Write the name of the activity</string>
+    <plurals name="log_activity_error_too_long">
+        <item quantity="one">Use at most %1$d character</item>
+        <item quantity="other">Use at most %1$d characters</item>
+    </plurals>
+    <plurals name="log_activity_error_duration">
+        <item quantity="one">Enter between %1$d and %2$d minute</item>
+        <item quantity="other">Enter between %1$d and %2$d minutes</item>
+    </plurals>
+    <string name="log_activity_error_intensity">Choose an intensity</string>
+    <string name="log_activity_error_future">The time can\'t be in the future</string>
+    <plurals name="log_activity_error_too_early">
+        <item quantity="one">Choose a day within the last %1$d day</item>
+        <item quantity="other">Choose a day within the last %1$d days</item>
+    </plurals>
+    <string name="log_activity_save_failed">The activity could not be saved. Try again.</string>
+    <string name="log_activity_not_found">This activity no longer exists.</string>
+    <!-- Training photos (local only) -->
+    <string name="log_activity_photo">Photo (optional)</string>
+    <string name="photo_add">Add photo</string>
+    <string name="photo_change">Change photo</string>
+    <string name="photo_remove">Remove photo</string>
+    <string name="photo_source_title">Add a photo</string>
+    <string name="photo_source_camera">Take photo</string>
+    <string name="photo_source_gallery">Choose from gallery</string>
+    <string name="photo_privacy_note">Photos stay on this device for now. Location data is removed.</string>
+    <string name="photo_processing">Saving photo…</string>
+    <string name="photo_added">Photo added</string>
+    <string name="photo_error_unreadable">This image couldn\'t be read. Try another one.</string>
+    <string name="photo_error_no_space">Not enough space on this device to save the photo.</string>
+    <string name="photo_error_entry_missing">The workout for this photo no longer exists.</string>
+    <string name="photo_error_failed">The photo couldn\'t be saved. Your workout is safe.</string>
+    <string name="photo_content_description">Workout photo, %1$s</string>
+    <string name="photo_content_description_undated">Workout photo</string>
+    <string name="photo_open">Open photo</string>
+    <string name="photo_close">Close photo</string>
+    <string name="photo_remove_title">Remove the photo?</string>
+    <string name="photo_remove_message">The photo will be deleted from this device.</string>
+    <string name="photo_remove_confirm">Remove</string>
+    <string name="photo_remove_cancel">Cancel</string>
+    <string name="training_history_entry_actions">Entry options</string>
+
+    <!-- Account (Phase 1: identity only) -->
+    <string name="welcome_title">Welcome to Tío Minuter</string>
+    <string name="welcome_message">Ten minutes a day is enough to start. Sign in to keep your workouts safe, or start right away as a guest.</string>
+    <string name="auth_continue_with_google">Continue with Google</string>
+    <string name="auth_continue_as_guest">Continue as guest</string>
+    <string name="auth_sign_in_with_google">Sign in with Google</string>
+    <string name="auth_signing_in">Signing in…</string>
+    <string name="auth_cancel">Cancel</string>
+    <string name="guest_dialog_title">Continue as guest?</string>
+    <string name="guest_dialog_message">Your workouts are saved only on this device. If you uninstall the app or change phones, they\'re lost. Groups and the activity feed (coming soon) need an account.</string>
+    <string name="guest_banner_text">You\'re using a guest profile. Sign in to back up your workouts.</string>
+    <string name="guest_banner_sign_in">Sign in</string>
+    <string name="guest_banner_dismiss">Dismiss</string>
+    <string name="home_account_button">Account</string>
+    <string name="account_title">Account</string>
+    <string name="account_guest_title">Guest mode</string>
+    <string name="account_guest_message">Your workouts are saved only on this device. Sign in with Google to back them up later and to join groups and the activity feed when they arrive. Everything you\'ve logged stays on this device.</string>
+    <string name="account_photo_description">Profile photo</string>
+    <string name="account_sign_out">Sign out</string>
+    <string name="account_delete">Delete account</string>
+    <string name="sign_out_dialog_title">Sign out?</string>
+    <string name="sign_out_dialog_message">Your workouts stay on this device, and you continue in guest mode.</string>
+    <string name="delete_dialog_title">Delete your account?</string>
+    <string name="delete_dialog_message">Your Tío Minuter account and everything backed up online (workouts, goals and programs) are deleted. First you\'ll confirm with Google. Your workouts on this device stay unless you choose otherwise.</string>
+    <string name="delete_wipe_checkbox">Also delete my workouts from this device</string>
+    <string name="delete_continue">Continue</string>
+    <string name="delete_confirm_title">Delete permanently?</string>
+    <string name="delete_confirm_message_keep">This can\'t be undone. Your workouts stay on this device.</string>
+    <string name="delete_confirm_message_wipe">This can\'t be undone. Your workouts, goals, programs and photos are also deleted from this device.</string>
+    <string name="auth_error_no_network">No internet connection. Check it and try again.</string>
+    <string name="auth_error_no_google_account">No Google account is available on this device. Add one in Settings and try again.</string>
+    <string name="auth_error_sign_in_failed">Couldn\'t sign in with Google. Please try again.</string>
+    <string name="auth_error_delete_failed">Couldn\'t delete the account. Try again.</string>
+    <string name="auth_error_wipe_failed">Account deleted, but some workouts couldn\'t be removed from this device.</string>
+    <string name="auth_signed_out">Signed out. Your workouts are still on this device.</string>
+    <string name="auth_account_deleted">Account deleted. You\'re in guest mode now.</string>
+    <string name="auth_account_deleted_and_wiped">Account and workouts on this device deleted. You\'re in guest mode now.</string>
+
+    <!-- Gym session closed after 2 hours without a completed set -->
+    <string name="gym_session_saved">Your unfinished workout was saved (%1$s).</string>
+    <string name="gym_session_duration_hours_minutes">%1$d h %2$02d min</string>
+    <string name="gym_session_duration_minutes">%1$d min</string>
+
+    <!-- Sync with Firestore (Account screen) -->
+    <string name="auth_error_server_data_failed">Couldn\'t delete your backed-up data, so your account wasn\'t deleted. Try again.</string>
+    <string name="sync_error_backup_failed">Couldn\'t back up. Try again.</string>
+    <string name="sync_status_backed_up">Backed up · %1$s</string>
+    <string name="sync_status_never">Not backed up yet</string>
+    <plurals name="sync_status_pending">
+        <item quantity="one">%d change pending</item>
+        <item quantity="other">%d changes pending</item>
+    </plurals>
+    <string name="sync_status_failing">Couldn\'t back up, will retry</string>
+    <string name="sync_status_running">Backing up…</string>
+    <string name="sync_back_up_now">Back up now</string>
+    <string name="sync_backed_up">Backed up</string>
+    <string name="sign_out_pending_title">Changes not backed up</string>
+    <plurals name="sign_out_pending_message">
+        <item quantity="one">You have %d change that isn\'t backed up yet.</item>
+        <item quantity="other">You have %d changes that aren\'t backed up yet.</item>
+    </plurals>
+    <string name="sign_out_anyway">Sign out anyway</string>
+    <string name="auth_error_account_not_deleted">Your backed-up data was deleted, but your account couldn\'t be deleted. Try Delete account again, or sign out.</string>
+
+    <!-- Groups -->
+    <string name="groups_title">Groups</string>
+    <string name="groups_home_button">Groups</string>
+    <string name="groups_member_fallback_name">Member</string>
+    <string name="groups_guest_title">Train with friends</string>
+    <string name="groups_guest_text">Groups let you compare your week with friends: who trained, how close each person is to their weekly goal and their streak. They need an account so your groups follow you.</string>
+    <string name="groups_guest_sign_in">Sign in with Google</string>
+    <string name="groups_empty_title">No groups yet</string>
+    <string name="groups_empty_text">Create a group and share its code, or join one with a code from a friend.</string>
+    <string name="groups_create_button">Create group</string>
+    <string name="groups_join_button">Join with code</string>
+    <string name="groups_load_error">Couldn\'t load your groups.</string>
+    <string name="groups_retry">Retry</string>
+    <string name="groups_privacy_note">Groups see your name, photo, weekly count, goal, streak and which kinds of workout you did each day. Never durations, notes or photos.</string>
+    <plurals name="groups_member_count">
+        <item quantity="one">%d member</item>
+        <item quantity="other">%d members</item>
+    </plurals>
+    <string name="groups_my_position">This week: #%1$d</string>
+    <string name="groups_owner_label">Owner</string>
+    <string name="groups_goal_required_title">Set your weekly goal first</string>
+    <string name="groups_goal_required_text">Groups compare everyone\'s week against their own goal, so you need one before creating or joining a group.</string>
+    <string name="groups_goal_required_action">Set goal</string>
+    <string name="groups_cancel">Cancel</string>
+    <string name="groups_back">Back</string>
+
+    <string name="groups_create_title">Create a group</string>
+    <string name="groups_create_name_label">Group name</string>
+    <string name="groups_create_name_error">Use 1 to 40 characters.</string>
+    <string name="groups_create_action">Create</string>
+    <string name="groups_created_title">Group created!</string>
+    <string name="groups_created_text">Share this code so your friends can join %1$s.</string>
+    <string name="groups_open_group">Open group</string>
+    <string name="groups_code_label">Invite code</string>
+    <string name="groups_copy_code">Copy code</string>
+    <string name="groups_share_code">Share code</string>
+    <string name="groups_code_copied">Code copied</string>
+    <string name="groups_share_text">Join my group %1$s on %3$s with code %2$s</string>
+    <string name="groups_share_chooser">Share invite</string>
+
+    <string name="groups_join_title">Join a group</string>
+    <string name="groups_join_code_label">Invite code</string>
+    <string name="groups_join_code_hint">8 characters, for example K7MPX2QA</string>
+    <string name="groups_join_code_invalid_chars">Codes never use 0, O, 1, I or L.</string>
+    <string name="groups_join_looking">Looking for the group…</string>
+    <string name="groups_join_preview">You\'re about to join %1$s.</string>
+    <string name="groups_join_action">Join</string>
+
+    <string name="groups_detail_this_week">This week</string>
+    <string name="groups_detail_progress">%1$d/%2$d</string>
+    <string name="groups_detail_me">You</string>
+    <plurals name="groups_detail_streak">
+        <item quantity="one">Streak: %d week</item>
+        <item quantity="other">Streak: %d weeks</item>
+    </plurals>
+    <string name="groups_detail_position">#%1$d</string>
+    <string name="groups_detail_not_updated">Not updated this week</string>
+    <string name="groups_detail_leave">Leave group</string>
+    <string name="groups_detail_owner_menu">Group options</string>
+    <string name="groups_detail_member_menu">Options for %1$s</string>
+    <string name="groups_detail_rename">Rename</string>
+    <string name="groups_detail_regenerate">New invite code</string>
+    <string name="groups_detail_transfer">Transfer ownership</string>
+    <string name="groups_detail_delete">Delete group</string>
+    <string name="groups_detail_remove">Remove from group</string>
+    <string name="groups_detail_make_owner">Make owner</string>
+    <string name="groups_detail_day_none">%1$s: no workouts</string>
+    <string name="groups_detail_day_sources">%1$s: %2$s</string>
+
+    <string name="groups_dialog_rename_title">Rename group</string>
+    <string name="groups_dialog_save">Save</string>
+    <string name="groups_dialog_regenerate_title">Create a new invite code?</string>
+    <string name="groups_dialog_regenerate_text">The current code will stop working. People already in the group stay.</string>
+    <string name="groups_dialog_regenerate_confirm">New code</string>
+    <string name="groups_dialog_remove_title">Remove %1$s?</string>
+    <string name="groups_dialog_remove_text">They\'ll leave the group. They can join again with the current code.</string>
+    <string name="groups_dialog_remove_confirm">Remove</string>
+    <string name="groups_dialog_transfer_title">Choose the new owner</string>
+    <string name="groups_dialog_transfer_before_leaving">You own this group. Choose who will own it before you leave.</string>
+    <string name="groups_dialog_transfer_confirm_title">Make %1$s the owner?</string>
+    <string name="groups_dialog_transfer_confirm_text">They\'ll be able to rename, manage members and delete the group.</string>
+    <string name="groups_dialog_transfer_and_leave_text">They\'ll own the group and you\'ll leave it.</string>
+    <string name="groups_dialog_transfer_confirm">Make owner</string>
+    <string name="groups_dialog_transfer_and_leave_confirm">Transfer and leave</string>
+    <string name="groups_dialog_delete_title">Delete %1$s?</string>
+    <string name="groups_dialog_delete_text">Everyone will leave the group and its code will stop working.</string>
+    <string name="groups_dialog_delete_next">Continue</string>
+    <string name="groups_dialog_delete_confirm_title">This can\'t be undone</string>
+    <string name="groups_dialog_delete_confirm_text">Delete %1$s for every member?</string>
+    <string name="groups_dialog_delete_confirm">Delete group</string>
+    <string name="groups_dialog_leave_title">Leave %1$s?</string>
+    <string name="groups_dialog_leave_text">You can join again with the group\'s code.</string>
+    <string name="groups_dialog_leave_alone_text">You\'re the only member, so leaving deletes the group.</string>
+    <string name="groups_dialog_leave_confirm">Leave</string>
+
+    <string name="groups_message_no_network">No internet connection. Try again when you\'re online.</string>
+    <string name="groups_message_invalid_code">That code doesn\'t match any group. Check it and try again.</string>
+    <string name="groups_message_group_full">That group is full (20 members).</string>
+    <string name="groups_message_already_member">You\'re already in that group.</string>
+    <string name="groups_message_group_limit">You can be in up to 5 groups. Leave one to join another.</string>
+    <string name="groups_message_goal_required">Set your weekly goal first.</string>
+    <string name="groups_message_invalid_name">Use 1 to 40 characters.</string>
+    <string name="groups_message_not_found">This group is no longer available to you.</string>
+    <string name="groups_message_not_allowed">That action isn\'t allowed.</string>
+    <string name="groups_message_failed">Something went wrong. Try again.</string>
+    <string name="groups_message_sign_in">Sign in to use groups.</string>
+    <string name="groups_message_left">You left the group.</string>
+    <string name="groups_message_deleted">Group deleted.</string>
+    <string name="groups_message_renamed">Group renamed.</string>
+    <string name="groups_message_code_regenerated">New code: %1$s</string>
+    <string name="groups_message_member_removed">%1$s was removed.</string>
+    <string name="groups_message_owner_changed">%1$s is now the owner.</string>
+
+    <string name="groups_source_daily">Daily routine</string>
+    <string name="groups_source_gym">Gym routine</string>
+    <string name="groups_source_program">Program</string>
+    <string name="groups_source_activity">Activity</string>
+
+    <string name="trained_today_one">%1$s already trained today. Your turn 💪</string>
+    <string name="trained_today_two">%1$s and %2$s already trained today. Your turn 💪</string>
+    <plurals name="trained_today_more">
+        <item quantity="one">%1$s, %2$s and %3$d more already trained today. Your turn 💪</item>
+        <item quantity="other">%1$s, %2$s and %3$d more already trained today. Your turn 💪</item>
+    </plurals>
+    <string name="trained_today_open">Open groups</string>
+    <string name="trained_today_dismiss">Hide for today</string>
+    <string name="auth_error_groups_failed">Couldn\'t leave your groups, so nothing was deleted. Try again.</string>
+    <!-- Group feed (Phase 4b) -->
+    <string name="share_in_groups_label">Share in my groups</string>
+    <string name="share_in_groups_on">Your groups will see this workout in their feed.</string>
+    <string name="share_in_groups_off">This workout stays private.</string>
+    <string name="share_intro_title">Share your workouts with your groups</string>
+    <string name="share_intro_text">When you finish a workout, the members of your groups see it in the group\'s feed: your name and photo, the workout\'s title, how long it took and the thumbnail of its photo, if you added one. Notes, intensity and full photos stay on this device. You can turn sharing off for any workout, and delete your posts at any time.</string>
+    <string name="share_intro_ok">OK</string>
+    <string name="share_intro_dont_share">Don\'t share this one</string>
+    <string name="groups_tab_ranking">Ranking</string>
+    <string name="groups_tab_feed">Feed</string>
+    <string name="feed_empty">No workouts shared this week yet.</string>
+    <string name="feed_empty_monday">A new week starts today. Workouts your group finishes will show up here.</string>
+    <string name="feed_load_more">Load more</string>
+    <string name="feed_delete">Delete</string>
+    <string name="feed_hide">Hide for me</string>
+    <string name="feed_post_menu">Options for the workout of %1$s</string>
+    <string name="feed_photo_description">Workout photo of %1$s</string>
+    <plurals name="feed_reaction_description">
+        <item quantity="one">%1$s, %2$d reaction</item>
+        <item quantity="other">%1$s, %2$d reactions</item>
+    </plurals>
+    <string name="feed_reaction_mine">Your reaction</string>
+    <string name="feed_reaction_not_mine">Not selected</string>
+    <string name="feed_reaction_strong">Strong</string>
+    <string name="feed_reaction_fire">On fire</string>
+    <string name="feed_reaction_clap">Applause</string>
+    <string name="feed_reaction_raised">Celebrate</string>
+    <string name="feed_just_now">Just now</string>
+    <string name="feed_dialog_delete_own_title">Delete your post?</string>
+    <string name="feed_dialog_delete_own_text">It disappears from this group\'s feed. The workout stays in your history.</string>
+    <string name="feed_dialog_delete_owner_title">Delete the post of %1$s?</string>
+    <string name="feed_dialog_delete_owner_text">It disappears from the group\'s feed for everyone. Their workout stays in their own history.</string>
+    <string name="feed_message_hidden">Post hidden on this device</string>
+    <string name="feed_message_deleted">Post deleted</string>
+    <string name="feed_message_reaction_failed">Couldn\'t save your reaction</string>
+
+    <!-- Workout names (WorkoutNameResolver): resolved in the viewer's language at display time -->
+    <string name="workout_name_day">Day %1$d</string>
+    <string name="workout_name_day_with_title">%1$s · %2$s</string>
+    <string name="home_day_available">%1$s available</string>
+
+    <!-- Daily routines unlock one by one (DailyUnlockRules); %1$s is a day's name ("Day 3" / "Día 3") -->
+    <string name="daily_locked_hint">Complete %1$s to unlock</string>
+    <string name="daily_state_locked">Locked</string>
+    <string name="daily_state_completed">Completed</string>
+    <string name="daily_state_available">Available</string>
+    <string name="daily_available_today">Available today</string>
+    <string name="daily_restart_action">Restart days</string>
+    <string name="daily_restart_title">Restart days?</string>
+    <string name="daily_restart_message">Every day will be locked again and you\'ll start from %1$s. Your history, your weekly goal and your groups won\'t change.</string>
+    <string name="daily_restart_confirm">Restart</string>
+    <string name="daily_cycle_complete">You completed every day!</string>
+    <string name="daily_start_again">Start again from %1$s</string>
+</resources>
