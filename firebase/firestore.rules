@@ -749,9 +749,7 @@ service cloud.firestore {
       // Only members read a group (single gets: the app knows its groups from its index)
       allow get: if isMemberOf(groupId);
       allow create: if isSignedIn() && isGroupCreate(groupId);
-      allow update: if isSignedIn() && isValidGroup()
-        && (isJoin(groupId) || isLeave(groupId) || isRemoveMember(groupId) || isTransfer(groupId)
-          || isRename() || isRegenerateCode(groupId));
+      allow update: if isSignedIn();
       allow delete: if isSignedIn() && isGroupDelete(groupId);
 
       match /members/{memberUid} {
