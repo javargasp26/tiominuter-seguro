@@ -1,0 +1,23 @@
+rules:
+  - id: firestore-escritura-solo-auth
+    languages: [generic]
+    severity: ERROR
+    message: >-
+      Esta regla de Firestore permite escribir con solo estar autenticado (o sin
+      condicion). Cualquier usuario con sesion puede modificar campos protegidos
+      del documento, por ejemplo cambiar ownerUid y quedarse con el grupo (T3,
+      Lab 1). Exige identidad sobre el recurso: request.auth.uid == resource.data.ownerUid
+      y valida que los campos protegidos no cambien.
+    metadata:
+      category: security
+      cwe: "CWE-862: Missing Authorization"
+      asvs: "V8 Authorization (ASVS 5.0)"
+      threat: "Lab 1 · T3 · Un miembro se hace dueno del grupo (STRIDE: E)"
+      references:
+        - https://firebase.google.com/docs/rules/insecure-rules
+    paths:
+      include:
+        - "*.rules"
+    pattern-either:
+      - pattern-regex: 'allow\s+[a-z,\s]*\b(?:write|update|delete)\b[a-z,\s]*:\s*if\s+(?:true|request\.auth\s*!=\s*null|null\s*!=\s*request\.auth|isSignedIn\(\))\s*;'
+      - pattern-regex: 'allow\s+[a-z,\s]*\b(?:write|update|delete)\b[a-z,\s]*;'

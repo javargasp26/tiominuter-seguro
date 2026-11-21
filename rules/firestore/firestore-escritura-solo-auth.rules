@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ── Casos VULNERABLES: la regla DEBE marcarlos ──
+    match /groups/{groupId} {
+      // ruleid: firestore-escritura-solo-auth
+      allow update: if request.auth != null;
+    }
+    match /groupsLegacy/{groupId} {
+      // ruleid: firestore-escritura-solo-auth
+      allow read, write: if true;
+    }
+    match /posts/{postId} {
+      // ruleid: firestore-escritura-solo-auth
+      allow delete;
+    }
+    match /groupsHelper/{groupId} {
+      // ruleid: firestore-escritura-solo-auth
+      allow update: if isSignedIn();
+    }
+    // ── Casos SEGUROS: la regla NO debe marcarlos ──
+    match /groupsOk/{groupId} {
+      // ok: firestore-escritura-solo-auth
+      allow read: if request.auth != null;
+      // ok: firestore-escritura-solo-auth
+      allow update: if request.auth != null
+                    && request.auth.uid == resource.data.ownerUid;
+      // ok: firestore-escritura-solo-auth
+      allow update: if request.auth != null && isMember(groupId)
+                    && request.resource.data.ownerUid == resource.data.ownerUid;
+    }
+  }
+}
