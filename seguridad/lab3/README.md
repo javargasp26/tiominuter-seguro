@@ -1,7 +1,7 @@
 # Lab 3 · Gate de seguridad en el pipeline
 
 Repo: javargasp26/tiominuter-seguro (snapshot público y sanitizado de TioMinuterMVI: sin GIFs ni config de Firebase).
-Autor: Javier Alejandro Vargas (@javargasp26)
+Equipo: Javier Alejandro Vargas (@javargasp26) · Tatiana García (@Tatianag2)
 
 ## Evidencia
 
